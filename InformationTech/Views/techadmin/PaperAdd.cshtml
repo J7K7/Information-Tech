@@ -1,0 +1,122 @@
+﻿@model InformationTech.Models.paper
+
+@{
+    ViewBag.Title = "Paper Add";
+    Layout = "~/Views/_LayoutPageAdmin.cshtml";
+}
+
+
+
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-themecolor">Paper Add</h3>
+        </div>
+        <div class="col-md-7 align-self-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("DashBoard","techadmin")">Home</a></li>
+                <li class="breadcrumb-item">Paper</li>
+                <li class="breadcrumb-item active">Paper Add</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <!-- Row -->
+  
+    @using (Html.BeginForm("PaperAdd", "techadmin", FormMethod.Post, new { enctype = "multipart/form-data", style = "width:400px;" }))
+    {
+        @Html.HiddenFor(model => model.subject_id)
+
+        @Html.AntiForgeryToken()
+
+
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header btn-primary">
+
+                        <h4 class="m-b-0 text-white">Form For Paper Add</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form p-t-20">
+
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                   
+                                    <div class="form-group">
+
+
+                                       <select id="year" name="year" class="form-control">
+                                           @Html.Raw(ViewBag.option);
+                                        </select>
+
+
+                                    </div>
+
+                                    <div class="form-group">
+                                        
+                                        <select id="month" name="month" class="form-control">
+                                            <option value="1"> January</option>
+                                            <option value="2"> february</option>
+                                            <option value="3"> March</option>
+                                            <option value="4"> April</option>
+                                            <option value="5"> May</option>
+                                            <option value="6"> June</option>
+                                            <option value="7"> July</option>
+                                            <option value="8"> August</option>
+                                            <option value="9"> September</option>
+                                            <option value="10"> October</option>
+                                            <option value="11"> November</option>
+                                            <option value="12"> December</option>
+                                        </select>
+
+                                       
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        @*<label for="exampleInputuname">PDF</label>*@
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="fa fa-file-pdf-o"></i></div>
+
+                                            @Html.TextBoxFor(model => model.pdf, new { @class = "form-control", type = "file", required = "required", id = "pdf", name = "photo", accept = "application/pdf", title = "Enter paper Pdf", onchange = "imagepreviewcust(this);" })
+
+
+                                        </div>
+                                    </div>
+
+                                   
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light btn-success  text-uppercase " type="submit" value="paper" name="submit">Add Exam Paper</button>
+
+                        <button type="submit" class="btn waves-effect waves-light btn-danger">Cancel</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>
+
+
+

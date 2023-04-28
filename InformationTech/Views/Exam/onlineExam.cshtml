@@ -1,0 +1,427 @@
+﻿
+@{
+    ViewBag.Title = "onlineExam";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+
+<style>
+    /* The container */
+    .containerrdo {
+        /*display: block;*/
+        position: relative;
+        padding-left: 35px;
+        /*margin-bottom: 12px;*/
+        cursor: pointer;
+        font-size: 14px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        font-weight: normal;
+        margin-left: 10px;
+        /*user-select: none;*/
+    }
+
+        /* Hide the browser's default radio button */
+        .containerrdo input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+    /* Create a custom radio button */
+    .checkmarkrdo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .containerrdo:hover input ~ .checkmarkrdo {
+        background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .containerrdo input:checked ~ .checkmarkrdo {
+        background-color: #2196F3;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmarkrdo:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .containerrdo input:checked ~ .checkmarkrdo:after {
+        display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .containerrdo .checkmarkrdo:after {
+        top: 7px;
+        left: 7px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: white;
+    }
+</style>
+
+
+<!-- Start Bradcaump area -->
+<div class="ht__bradcaump__area" data--black__overlay="4" style="background: rgba(0, 0, 0, 0) url(/Content//ClientCss/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">Exam</h2>
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">Exam</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start Courses Grid Area -->
+<section class="htc__courses__grid bg__white ptb--80">
+    <div class="container">
+        <!-- Start Tab Menu -->
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="courses__tab__wrap">
+                    <div class="courses__grid__inner">
+                        <!-- Start Tab -->
+                        <div class="view-mode-wrap">
+                            @*<ul class="view-mode" role="tablist">
+                                    <li role="presentation" class="grid-view"><a href="#grid-view" role="tab" data-toggle="tab"><i class="icon ion-grid"></i></a></li>
+                                    <li role="presentation" class="list-view active"><a href="#list-view" role="tab" data-toggle="tab"><i class="icon ion-navicon-round"></i></a></li>
+                                </ul>*@
+                            <span class="show__result" style="text-transform:capitalize;">@ViewBag.name1</span>
+                        </div>
+                        <!-- Start Tab -->
+                        <!-- Start Courses Search -->
+                        <div class="courses__searsh__box">
+                                @*<input type="text" placeholder="Search Courses...">
+                                <a href="#"><i class="icon ion-ios-search-strong"></i></a>*@
+                            <span class="show__result" style="text-transform:capitalize;">@ViewBag.subtitl Online Test</span>
+                            </div>
+                        <!-- End Courses Search -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Tab Menu -->
+        <!-- Start Tab Content -->
+        <div class="row">
+            <div class="col-md-11 col-lg-11 col-sm-12 col-xs-12">
+                <div class="courses__content__wrap mt--20 list__view__page">
+
+                    <div class="col-12 text-center mb-4">
+
+                        <h4 id="demo" class="text-primary" style="font-size: -webkit-xxx-large;"></h4>
+
+                        <input id="minutesInput" type="number" min="0" placeholder="Minutes" style="display:none;">
+                        <input id="secondsInput" type="number" min="0" max="60" maxlength="2" style="display:none;" step="5" placeholder="Seconds" value="">
+
+                        <progress id="progressBar" max="0" value="0" class="progress_styled" style="width:80%; height:30px;"></progress>
+                    </div>
+
+
+                    <!-- Start Single Content -->
+                    <div role="tabpanel" class="single__grid__view clearfix tab-pane fade in active" id="list-view">
+                        <div class="row">
+                            <!-- Start Single List -->
+                            <div class='col-xs-12'>
+
+
+
+                                @Html.Raw(ViewBag.dt)
+
+
+                                <br />
+                                <br />
+
+                                @using (Html.BeginForm("onlineExam", "Exam", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                                {
+                                    <input type="text" id="select_obj_id" name="select_obj_id" style="display:none" /><br />
+                                    <input type="text" id="qesid" name="qesid" value='@ViewBag.que_id' style="display:none" /> <br />
+                                    <input type="text" id="QExamId" name="QExamId" value='@ViewBag.value' style="display:none" /><br />
+                                    <center>
+                                        <input type="submit" value="Submit" class="btn-primary" style="padding: 5px 20px; font-size: large;" />
+                                    </center>
+
+                                }
+                            </div>
+
+                            <!-- End Single List -->
+
+
+                        </div>
+                    </div>
+                    <!-- End Single Content -->
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- End Tab Content -->
+
+</section>
+<!-- End Courses Grid Area -->
+
+
+
+
+
+
+<input type="text" id="ida" value='@ViewBag.value' style="display:none;" /><br />
+<input type="text" id="querystr" name="querystr" value='@ViewBag.a' style="display:none;" /><br /><br />
+
+
+<input type="text" id="todate" value='@ViewBag.todate' style="display:none;" />
+
+
+
+<script>
+
+    var selectobj;
+
+    //function callme() {
+    //    document.getElementById("filtersFrm").submit();
+    //}
+
+    var chkArray = [];
+    var chkArray2 = [];
+    var strArr = [];
+    var strArr2 = [];
+
+    /*Objective*/
+    function getValueUsingOffer(rdo) {
+
+        var s = document.getElementById("select_obj_id").value;
+
+        //alert(s);
+
+        if (s == "") {
+
+            //alert("helo");
+            chkArray.push(rdo);
+            selectobj = chkArray.join('|');
+
+            if (selectobj.length > 0) {
+                //alert("You have selected " + selectobj);
+
+                document.getElementById("select_obj_id").value = selectobj;
+            } else {
+
+                document.getElementById("select_obj_id").value = " ";
+            }
+        }
+        else {
+            strArr = s.split('|');
+            chkArray2 = rdo.split(',');
+            var rFound = false;
+            //alert(strArr + ' ' + chkArray2);
+
+            for (var j = 0; j < chkArray2.length; j++) {
+                //alert("abc");
+            }
+
+            //alert(chkArray2[0]+ ' ' + chkArray2[1]);
+
+            var newC = "";
+
+            for (var i = 0; i < strArr.length; i++) {
+                var t = strArr[i];
+                //alert(t);
+                if (t.length > 0) {
+                    strArr2 = t.split(',');
+
+                    //alert(strArr2);
+                    if (strArr2.length > 0) {
+                        if (strArr2[0] == chkArray2[0]) {
+                            //alert("h");
+                            if (newC == "") {
+                                newC = chkArray2[0] + "," + chkArray2[1];
+                                //alert(newC);
+                            }
+                            else {
+                                newC = newC + "|" + chkArray2[0] + "," + chkArray2[1];
+                            }
+                            rFound = true;
+                        }
+                        else {
+                            newC = newC + "|" + t;
+                        }
+                    }
+                }
+                else {
+                    console.log("Cookie SOME WHERE HERE");
+                }
+
+            }
+
+            if (rFound != true) {
+                if (newC == "") {
+                    newC = chkArray2[0] + "," + chkArray2[1];
+                }
+                else {
+                    newC = newC + "|" + chkArray2[0] + "," + chkArray2[1];
+                }
+            }
+
+
+            chkArray.push(rdo);
+            selectobj = chkArray.join('|');
+
+
+            if (selectobj.length > 0) {
+                //alert("You have selected " + selectobj);
+
+                document.getElementById("select_obj_id").value = newC;
+            } else {
+
+                document.getElementById("select_obj_id").value = " ";
+
+            }
+        }
+    }
+
+</script>
+
+
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+
+
+<script>
+    // Set the date we're counting down to
+    var a = document.getElementById("todate").value;
+
+
+    //var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+    var countDownDate = new Date(a).getTime();
+    // Update the count down every 1 second
+
+    var now1 = new Date().getTime();
+    //alert(now);
+    // Find the distance between now and the count down date
+    var distance1 = countDownDate - now1;
+    var minutes1 = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds1 = Math.floor((distance1 % (1000 * 60)) / 1000);
+    var allsecond = minutes1 * 60 + seconds1;
+
+    var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+        //alert(now);
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        //document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        document.getElementById("demo").innerHTML = minutes + "m " + seconds + "s ";
+
+
+        var remaining = (minutes * 60) + seconds;
+        document.getElementById("minutesInput").value = minutes;
+        document.getElementById("secondsInput").value = seconds;
+
+        document.title = minutes + "m " + seconds + "s "
+
+        progressBar.value = allsecond - remaining;
+        progressBar.setAttribute("max", allsecond);
+
+
+
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            alert("Time Out");
+            document.getElementById("demo").innerHTML = "EXPIRED";
+            var examid = document.getElementById("ida").value;
+            //window.location.href = "../result/examid=" + examid;
+            //alert(examid);
+
+
+            var select_obj_id = $('#select_obj_id').val()
+            var qesid = $('#qesid').val();
+            var QExamId = $('#QExamId').val();
+            var querystr = $('#querystr').val();
+
+
+
+            alert("select_obj_id :" + select_obj_id + ", qesid :" + qesid + ", QExamId :" + QExamId + ", querystr :" + querystr);
+            if (select_obj_id != '' && qesid != '' && QExamId != '') {
+                $.ajax
+
+                    ({
+
+                        type: 'POST',
+                        url: '/WebService1.asmx/insertExamData',
+                        async: false,
+
+                        data: "{ 'select_obj_id':'" + select_obj_id + "' , 'qesid':'" + qesid + "' ,'QExamId':'" + QExamId + "', 'querystr':'" + querystr + "'}",
+                        contentType: 'application/json; charset =utf-8',
+                        success: function (data) {
+
+                            var obj = data.d;
+                            if (obj == 'true') {
+
+                                window.location = "./result?examid=" + querystr;
+
+                            }
+                        },
+
+                        error: function (result) {
+
+                            alert("Error Occured, Try Again" + result.d);
+                        }
+                    });
+            } else {
+                //alert("Please Fill all the Fields");
+                window.location = "../Exam";
+                return false;
+            }
+
+
+
+            //window.location = "https://www.tutorialspoint.com";
+
+            //self.location = "https://www.example.com";
+            //top.location = "https://www.example.com";
+            //window.location.replace("https://www.example.com");
+        }
+    }, 1000);
+</script>
+
+
+
+
+
+

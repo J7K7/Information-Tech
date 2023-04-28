@@ -1,0 +1,1257 @@
+/*-----------------------------------------------------------------------------------
+
+  Template Name: Educan Education HTML Template.
+  Template URI: #
+  Description: Educan is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+-----------------------------------------------------------------------------------*/
+
+
+/* Large screen desktop */
+@media (min-width: 1366px) and (max-width: 1500px){
+
+
+.logo {
+  height: 100px;
+  line-height: 100px;
+}
+.main__menu > li > a {
+  height: 100px;
+  line-height: 100px;
+}
+.cart__search__list {
+  height: 100px;
+  line-height: 100px;
+}
+.ht__bradcaump__wrap {
+  height: 300px;
+}
+
+.slider--2 .slider__activation__wrap .owl-nav div {
+  transform: translateY(42px);
+}
+
+.slider__fixed_height {
+  display: block;
+  height: 620px;
+}
+
+
+}
+
+@media (min-width: 1170px) and (max-width: 1366px){
+
+.slider--2 .slider__activation__wrap .owl-nav div {
+  transform: translateY(42px);
+}
+
+.fornt__image--right::before,
+.fornt__image--right-2::before, 
+.fornt__image--right-3::before {
+  right: 0;
+}
+
+.slider__fixed_height {
+  display: block;
+  height: 620px;
+}
+.fornt__image--right::before {
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  right: 30px;
+}
+
+.logo {
+  height: 100px;
+  line-height: 100px;
+}
+.main__menu > li > a {
+  height: 100px;
+  line-height: 100px;
+}
+.cart__search__list {
+  height: 100px;
+  line-height: 100px;
+}
+.ht__bradcaump__wrap {
+  height: 300px;
+}
+
+
+
+}
+
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1169px) {
+.main__menu li + li {
+  margin-left: 12px;
+}
+nav.mainmenu__nav .cart__search {
+  margin-left: 32px;
+}
+.courses__details__inner {
+  padding: 27px 11px;
+}
+.upcoming__details {
+  margin-bottom: 18px;
+  padding-right: 21%;
+}
+.slick-dots {
+  bottom: -191px;
+}
+.subscribe__btn {
+  right: 19.5%;
+}
+.htc__news__inner::before {
+  right: 256px;
+}
+.indicator__style--1 .owl-nav div {
+  left: -70px;
+  transition: 0.3s;
+}
+.indicator__style--1 .owl-nav div.owl-next {
+  right: -70px;
+}
+
+.popular__courses__area:hover .indicator__style--1 .owl-nav div {
+  left: 11px;
+}
+.popular__courses__area:hover .indicator__style--1 .owl-nav div.owl-next {
+  right: 11px;
+  left: auto;
+}
+
+
+
+.service__details h2 {
+  font-size: 16px;
+}
+.htc__blog__details__container .blog__details h2 {
+  line-height: 28px;
+}
+.recent__post__details h2 {
+  font-size: 13px;
+}
+.list__view__info {
+  margin-bottom: 11px;
+}
+.lst__view__details h2 {
+  margin-bottom: 10px;
+}
+.list__meta {
+  margin-top: 10px;
+}
+.list__btn {
+  margin-top: 13px;
+}
+.list__view__page .courses__hover__thumb {
+  margin-right: 9px;
+}
+.list__view__page .courses__hover__action h4 {
+  font-size: 12px;
+}
+.list__view__page .courses__hover__action p {
+  font-size: 12px;
+}
+.list__view__page .courses__details h2 {
+  font-size: 16px;
+}
+.upcoming__details {
+  margin-bottom: 15px;
+  padding-right: 5%;
+}
+
+.main__menu li.drop ul.dropdown {
+  width: 230px;
+}
+.main__menu > li > a {
+  font-size: 14px;
+  padding: 0 13px;
+}
+
+/* Slider */
+
+.slider__fixed_height {
+  height: 500px;
+}
+
+.slider__inner h1 {
+  font-size: 50px;
+}
+.slider__inner p {
+  font-size: 26px;
+  line-height: 35px;
+}
+.fornt__image--right-3 .slider__inner p {
+  padding-right: 65px;
+}
+
+.fornt__image--right::before, 
+.fornt__image--right-2::before, 
+.fornt__image--right-3::before {
+  right: 0;
+  width: 530px;
+  background-size: cover;
+}
+
+.fornt__image--right-3::before {
+  background-size: cover;
+}
+
+
+/* Slider 2 */
+/*.slider__full--screen {
+  height: 600px;
+}*/
+
+
+/* Slider 3 */
+.slider--3 .slider__inner h1 {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+
+
+
+.header--four .header__top__right {
+  margin-right: 0;
+}
+.header--four nav.mainmenu__nav {
+  margin-right: 0;
+}
+.header--four .main__menu li.drop::before {
+  right: 0px;
+}
+.header__style__four.sticky__header.scroll-header {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.header__style__four.sticky__header.scroll-header .main__menu > li > a {
+  font-size: 13px;
+  padding: 0 8px;
+}
+.header__style__four.sticky__header.scroll-header nav.mainmenu__nav .cart__search {
+  margin-left: 24px;
+}
+
+
+.create__free__account__form {
+  margin-left: 0;
+}
+.create__free__account__form.form-left-side {
+  margin-right: 0;
+}
+.account__form__box {
+  padding: 25px 25px;
+}
+.create__free__account__form h2 {
+  font-size: 15px;
+  padding: 0 25px;
+}
+.newsletter__wrap {
+  padding: 150px 0;
+}
+
+
+
+.logo {
+  height: 80px;
+  line-height: 80px;
+}
+.main__menu > li > a {
+  height: 80px;
+  line-height: 80px;
+}
+.cart__search__list {
+  height: 80px;
+  line-height: 80px;
+}
+.slider__full--screen.slider--2,
+.slider__full--screen.slider--3 {
+  height: 550px;
+}
+.slider--2 .slider__display--center {
+  padding-top: 135px;
+}
+.slider--3 .slider__display--center {
+  padding-top: 99px;
+}
+.ht__bradcaump__wrap {
+  height: 230px;
+}
+
+
+}
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+.sm-mt-30{
+  margin-top: 30px;
+}
+.sm-mt-40{
+  margin-top: 40px;
+}  
+.header__address li + li {
+  margin-left: 34px;
+}
+.main__menu li + li {
+  margin-left: 13px;
+}
+nav.mainmenu__nav .cart__search {
+  margin-left: 30px;
+}
+.logo {
+  height: 84px;
+  justify-content: center;
+  line-height: 99px;
+  padding-top: 17px;
+}
+.testimonial-text-slider p {
+  padding: 20px 11%;
+}
+.slick-dots {
+  bottom: -193px;
+}
+.indicator__style--1 .owl-nav div {
+  position: inherit;
+  transform: translateY(0%);
+}
+.htc__service__wrap{
+  margin-top: -30px;
+}
+.service{
+  margin-top: 30px;
+}
+.ht__bradcaump__wrap {
+  height: 274px;
+}
+.findout__inner h2 {
+  font-size: 19px;
+}
+.blog__discount__area {
+  max-width: 274px;
+  padding-bottom: 343px;
+}
+.courses__top--right span.cres__price {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.courses__teacher {
+  margin-right: 10px;
+  padding-right: 10px;
+}
+.crs__teacher__images {
+  margin-right: 6px;
+}
+.list__meta {
+  margin-top: 9px;
+}
+.list__btn {
+  margin-top: 15px;
+}
+.lst__view__details h2 {
+  margin-bottom: 10px;
+}
+.list__view__info {
+  margin-bottom: 13px;
+}
+.teacher__address li {
+  font-size: 14px;
+}
+.sp__details__right {
+  padding-top: 0;
+}
+.sp__details__inner span.pro__price {
+  margin-bottom: 0;
+}
+.sp__details__inner {
+  margin-bottom: 24px;
+  padding-bottom: 20px;
+}
+.select__option__inner {
+  margin-bottom: 21px;
+  margin-top: 18px;
+}
+.shop__dtl__btn {
+  margin-top: 20px;
+}
+.sp__product__details {
+  padding-bottom: 19px;
+}
+.shop__dtl__social__link {
+  padding: 9px 0;
+}
+.list__details__inner h2 {
+  margin-bottom: 15px;
+}
+.list__details__inner p {
+  margin-bottom: 10px;
+}
+.shop__btn {
+  margin-top: 18px;
+}
+
+.funfact{
+  margin-top: 30px;
+}
+.counterup__wrap{
+  margin-top: -30px;
+}
+
+.indicator__style--1.owl-theme .owl-nav {
+  margin-top: 24px;
+}
+.subscribe__btn {
+  right: 16.5%;
+}
+.news__input input {
+  width: 478px;
+}
+.htc__news__inner::before {
+  right: 191px;
+  top: 16px;
+}
+.upcoming__style--2 .upcomig_time li + li,
+.upcoming__style--4 .upcomig_time li + li {
+  margin-left: 15px;
+}
+.upcoming__style--2 .upcoming__hover,
+.upcoming__style--4 .upcoming__hover {
+  padding: 27px;
+}
+.upcoming__style--2 .upcoming__date span.date,
+.upcoming__style--4 .upcoming__date span.date {
+  font-size: 40px;
+}
+.upcoming__style--2 .upcoming__date span,
+.upcoming__style--4 .upcoming__date span {
+  font-size: 13px;
+}
+
+.login__area__wrap {
+  width: 648px;
+}
+.about__thumb {
+  text-align: center;
+}
+
+
+
+/* Menu */
+.main__menu > li > a {
+  padding: 0 8px;
+}
+nav.mainmenu__nav .cart__search {
+  margin-left: 15px;
+}
+
+
+
+
+
+
+/* Slider */
+.slider__fixed_height {
+  height: 890px;
+}
+.fornt__image--right::before, 
+.fornt__image--right-2::before, 
+.fornt__image--right-3::before {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  right: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+}
+.slider__fixed_height .slider__display--center {
+  align-items: center;
+  display: block;
+  height: 100%;
+  padding-top: 80px;
+}
+
+
+/* Slider 2 */
+.slider__full--screen {
+  height: 500px;
+}
+.slider--2 .slider__display--center {
+  padding-top: 50px;
+}
+.slider--2 .slider__activation__wrap .owl-nav div {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+/* Slider 3 */
+.slider--3 .slider__inner h1 {
+  font-size: 40px;
+  line-height: 50px;
+}
+.slider--3 .slider__inner h4 {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+
+.slider__full--screen.slider--2 {
+  height: 470px;
+}
+.slider--2 .slider__display--center {
+  padding-top: 110px;
+}
+
+.slider__full--screen.slider--3 {
+  height: 470px;
+}
+.slider--3 .slider__display--center {
+  padding-top: 110px;
+}
+
+
+
+
+/*End*/
+nav.mainmenu__nav {
+  justify-content: center;
+}
+
+.create__free__account__form {
+  margin-left: 0px;
+}
+.create__free__account__form.form-left-side {
+  margin-right: 0px;
+}
+.upcoming__hover__info {
+  width: 50%;
+}
+.newsletter__wrap {
+  padding: 110px 0;
+}
+
+.newsletter__wrap h2 {
+  margin-bottom: 20px;
+  padding-top: 35px;
+}
+#scrollUp {
+  bottom: 85px;
+}
+.create__free__account__form {
+  margin-top: 50px;
+}
+
+.countdown__style--4 .create__free__account__form {
+  margin-top: 0px;
+}
+.ht__bradcaump__wrap {
+  height: 200px;
+}
+.bradcaump-inner {
+  margin-top: 8px;
+}
+.bradcaump-title {
+  font-size: 30px;
+}
+.review__thumb {
+  margin-right: 16px;
+  max-width: 71px;
+}
+
+
+
+
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+  
+.container {width:300px}
+
+.xs-mt-0{
+  margin-top: 0;
+}
+
+.xs-mt-30{
+  margin-top: 30px;
+}
+.xs-mt-40{
+  margin-top: 40px;
+}
+.xs-mt-50{
+  margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* Slider */
+.slider__fixed_height {
+  height: 520px;
+}
+.fornt__image--right::before, 
+.fornt__image--right-2::before, 
+.fornt__image--right-3::before {
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  right: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+}
+.slider__fixed_height .slider__display--center {
+  align-items: center;
+  display: block;
+  height: 100%;
+  padding-top: 80px;
+}
+.slider__inner p {
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 15px;
+}
+
+.slider__btn {
+  margin-top: 20px;
+}
+
+.slider__fixed_height .slider__display--center {
+  padding-top: 10px;
+}
+
+
+/* Slider 2 */
+.slider__full--screen {
+  height: 500px;
+}
+.slider--2 .slider__display--center {
+  padding-top: 150px;
+}
+.slider--2 .slider__activation__wrap .owl-nav div {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.slider__bg--2{
+  background: #517B91;
+}
+.slider__bg--5{
+  background: #56A4B1;
+}
+
+.slider--2 .slider__display--center {
+  align-items: center;
+  display: flex;
+  height: 500px;
+}
+
+.slider--2 .slider__inner h4 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.slider--2 .slider__inner h1 {
+  line-height: 50px;
+  font-size: 45px;
+}
+.slider--2 .slider__btn {
+  margin-top: 25px;
+}
+
+
+
+/* Slider 3 */
+.slider--3 .slider__inner h1 {
+  font-size: 20px;
+  line-height: 35px;
+}
+.slider--3 .slider__inner h4 {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.slider__bg--3{
+  background: #517B91;
+}
+.slider__bg--6{
+  background: #56A4B1;
+}
+
+
+
+/* Slider 4  */
+.slider--4 .slider__inner h1 {
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+.slider--4 .slider__inner h2 {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.slider--4.slider__fixed_height .slider__display--center {
+  padding-top: 50px;
+}
+
+
+
+.slider__full--screen.slider--2 {
+  height: 470px;
+}
+.slider--2 .slider__display--center {
+  padding-top: 50px;
+}
+
+.slider__full--screen.slider--3 {
+  height: 470px;
+}
+.slider--3 .slider__display--center {
+  padding-top: 50px;
+}
+
+
+
+
+/*End*/
+.htc__stories__inner h2 {
+  line-height: 43px;
+}
+.htc__stories__inner p {
+  line-height: 33px;
+  margin-top: 8px;
+  padding: 0 2%;
+}
+
+.htc__header__top {
+  height: 154px;
+}
+.header__address {
+  display: block;
+}
+.header__top__right {
+  display: block;
+}
+.header__address li + li {
+  margin-bottom: 8px;
+  margin-left: 0;
+  margin-top: 4px;
+}
+.login__register {
+  margin-left: 0;
+  padding-left: 0;
+}
+.login__register::before {
+  content: inherit;
+}
+.social__icon,
+.login__register {
+  justify-content: center;
+}
+.header__top__left {
+  text-align: center;
+}
+.funfact{
+  margin-top: 30px;
+}
+.counterup__wrap{
+  margin-top: -30px;
+}
+
+.courses {
+  margin-top: 30px;
+}
+.courses__details__inner {
+  padding: 27px 15px;
+}
+.courses__details h2 {
+  font-size: 16px;
+}
+.courses__hover__thumb {
+  margin-right: 8px;
+}
+.countdown__inner h2 {
+  font-size: 47px
+}
+.countdown__inner h4 {
+  line-height: 30px;
+}
+.box-timer {
+  justify-content: center;
+}
+.countbox > div {
+  display: block;
+}
+.medilearn-count {
+  margin: 0;
+}
+.upcoming__hover__info {
+  width: 100%;
+}
+.testimonial-text-slider p {
+  padding: 20px 0%;
+}
+.blog{
+  margin-top: 30px;
+}
+.subscribe__btn input {
+  padding: 0 11px;
+  font-size: 13px;
+}
+.news__input input {
+  padding: 0 10px;
+  width: 80%;
+}
+.subscribe__btn {
+  right: 10%;
+}
+.htc__news__inner::before {
+  content: inherit;
+}
+.htc__footer__address {
+  display: block;
+}
+.htc__footer__address li + li {
+  margin-left: 0;
+}
+.htc__footer__address li + li {
+  margin-left: 0;
+}
+.copyright__inner {
+  display: block;
+  height: 115px;
+}
+.copyright {
+  margin-top: 20px;
+}
+.footer__menu {
+  margin-top: 18px;
+}
+.footer__logo {
+  text-align: left;
+}
+.indicator__style--1 .owl-nav div {
+  position: inherit;
+  transform: translateY(0%);
+}
+.ht__bradcaump__wrap {
+  height: 200px;
+}
+.bradcaump-inner {
+  margin-top: 8px;
+}
+.bradcaump-title {
+  font-size: 30px;
+}
+
+.htc__service__wrap div[class*="col-"] .service{
+  margin-bottom: 50px;
+}
+.htc__service__wrap div[class*="col-"]:last-child .service{
+  margin-bottom: 0px;
+}
+.htc__service__wrap {
+  margin-top: 0px;
+}
+.findout__inner {
+  flex-flow: row wrap;
+}
+.findout__inner h2 {
+  display: block;
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.findout__inner h2 span {
+  padding-left: 0;
+}
+.htc__findout__area {
+  padding: 50px 0;
+}
+.htc__findout__area .findout__btn {
+  margin-left: 0;
+  margin: auto;
+  margin-bottom: 0;
+  line-height: 0;
+}
+.team{
+  margin-top: 30px;
+}
+.blog__meta {
+  display: block;
+}
+.blog__meta li + li {
+  margin-left: 0;
+  margin-top: 5px;
+  padding-left: 0;
+}
+.meta__separator::before {
+  content: inherit;
+}
+.htc__blog__details h2 {
+  line-height: 28px;
+}
+.courses__details__top h2 {
+  line-height: 36px;
+}
+.courses__rating__price,
+.courses__top--left {
+  display: block;
+}
+.courses__top--right span.cres__price {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.courses__top--right,
+.rating {
+  margin-top: 20px;
+}
+.courses__teacher {
+  margin-right: 0;
+  padding-right: 0;
+}
+.courses__teacher::before {
+  content: inherit;
+}
+.courses__view {
+  display: block;
+}
+.courses__view li + li {
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+.blog__recent__courses .title__style--2 {
+  line-height: 27px;
+}
+.courses__grid__inner {
+  display: block;
+}
+.courses__searsh__box input {
+  width: 231px;
+}
+.courses__searsh__box a {
+  top: 0;
+}
+.courses__searsh__box {
+  padding-bottom: 22px;
+}
+.single__list__view {
+  display: block;
+}
+.list__view__inner {
+  margin-top: 16px;
+}
+.ml-port-filter-nav {
+  flex-flow: row wrap;
+}
+.ml-port-filter-nav li + li {
+  margin-left: 36px;
+}
+.ml-port-filter-nav li:nth-child(n+4) {
+  margin-top: 14px;
+}
+.ml-port-filter-nav li:nth-child(4) {
+  margin-left: 0;
+}
+.profile__courses__right li {
+  font-size: 12px;
+  padding-left: 17px;
+}
+.profile__courses__list li {
+  font-size: 12px;
+}
+.profile__courses__list li i {
+  font-size: 12px;
+  margin-right: 4px;
+}
+.sp__details__inner h2 {
+  font-size: 26px;
+  line-height: 41px;
+}
+.list__details__inner h2 {
+  padding-top: 7px;
+}
+.indicator__style--1.owl-theme .owl-nav {
+  margin-top: 24px;
+}
+.bg--5 {
+  background: #F5F4F9;
+}
+.newsletter__wrap {
+  padding: 46px 0 100px 0;
+}
+
+.offer__separator::before {
+  content: inherit;
+}
+.offer.text-center.offer__separator {
+  padding-top: 0;
+}
+.upcoming__style--2 .upcomig_time,
+.upcoming__style--4 .upcomig_time {
+  display: block;
+}
+.upcoming__style--2 .upcomig_time li + li,
+.upcoming__style--4 .upcomig_time li + li {
+  margin-left: 0;
+}
+.upcoming__style--2 .upcoming__hover,
+.upcoming__style--4 .upcoming__hover {
+  padding: 17px;
+}
+.upcoming__details p {
+  font-size: 12px;
+  line-height: 24px;
+}
+.upcoming__style--2 .upcoming__date span.date,
+.upcoming__style--4 .upcoming__date span.date {
+  font-size: 42px;
+}
+.upcoming__style--2 .upcoming__date span, .upcoming__style--4 .upcoming__date span {
+  font-size: 15px;
+}
+.contact-box.name_email {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+.contact-box.name_email input {
+  margin: 0;
+  width: 100%;
+}
+.contact-box.name_email input + input {
+  margin-top: 20px;
+}
+.login__area__wrap {
+  box-shadow: none;
+  padding: 0px 7px;
+  width: 100%;
+}
+.login__checkbox span {
+  padding-left: 5px;
+}
+.htc__social__btn li {
+  margin: 0 10px;
+}
+.htc__social__btn {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+.htc__social__btn li a i {
+  font-size: 16px;
+  padding: 0 12px;
+}
+.htc__social__btn li a span {
+  font-size: 12px;
+  padding: 0 10px;
+}
+.res__title {
+  display: block;
+}
+.res__right {
+  display: block;
+}
+.sign__btn {
+  margin-left: 0;
+  text-align: left;
+  margin-top: 13px;
+}
+.res__right h4 {
+  margin-top: 12px;
+}
+
+
+/* Testimonial */
+.testimonial-wrap {
+  margin: auto;
+  width: 100%;
+}
+
+.testimonial-wrap .slick-slide {
+  display: block !important;
+  text-align: center;
+}
+.testimonial-wrap .text-thumb {
+  margin: auto;
+}
+.testimonial-wrap .slick-dots {
+  bottom: -150%;
+}
+.bg--4 {
+  background: rgba(0, 0, 0, 0) url("../images/bg/4.jpg") no-repeat scroll center center / cover ;
+}
+
+
+
+.countdown__inner {
+    text-align: center;
+}
+.countdown__inner > h4 {
+    font-size: 18px;
+}
+.countdown__inner h2 {
+    font-size: 35px;
+}
+.account__form__box {
+  padding: 20px 20px;
+}
+.create__free__account__form.form-left-side {
+  margin-right: 0;
+}
+.create__free__account__form h2 {
+  font-size: 14px;
+  padding: 0 20px;
+}
+.create__free__account__form {
+  margin-left: 0;
+  margin-top: 50px;
+}
+.upcoming__hover__info {
+  position: inherit;
+}
+.upcoming__hover__action {
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
+.counterup__wrap div[class*="col-"] .funfact {
+    margin-bottom: 40px;
+}
+.counterup__wrap div[class*="col-"]:last-child .funfact {
+    margin-bottom: 0;
+}
+
+.countdown__style--4 .create__free__account__form {
+  margin-top: 0px;
+}
+.our__countdown__area {
+  padding: 70px 0;
+}
+
+.htc__footer__top {
+  display: block;
+  height: auto;
+  padding: 70px 0px;
+}
+.slider__inner {
+  padding: 20px 0;
+}
+
+.review {
+  display: block;
+  position: relative;
+}
+.review__thumb {
+  margin-bottom: 20px;
+}
+.review.rev__reply {
+  margin-left: 10px;
+  margin-top: 30px;
+}
+.rating__send {
+  display: inline-block;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.review__info {
+  display: flex;
+  flex-direction: column;
+}
+.ht__rating {
+  float: none;
+  margin-left: 0;
+}
+.ht__review__form h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+
+
+
+}
+
+
+
+
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+
+
+/* Slider */
+.slider__fixed_height {
+  height: 600px;
+}
+.slider__fixed_height .slider__display--center {
+  padding-top: 30px;
+}
+
+/* Slider 4  */
+.slider--4 .slider__inner h1 {
+  font-size: 50px;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+
+
+
+.event__btn {
+  margin-top: 41px;
+}
+.courses__searsh__box input {
+  width: 385px;
+}
+.ml-port-filter-nav li:nth-child(4) {
+  margin-left: 36px;
+}
+.ml-port-filter-nav li:nth-child(n+4) {
+  margin-top: 0;
+}
+.ml-port-filter-nav li + li {
+  margin-left: 30px;
+}
+
+
+.testimonial-wrap .slick-dots {
+  bottom: -105%;
+}
+.htc__social__btn li a i {
+  font-size: 16px;
+  padding: 0 20px;
+}
+.htc__social__btn li a span {
+  font-size: 12px;
+  padding: 0 15px;
+}
+
+
+
+
+}
+ 

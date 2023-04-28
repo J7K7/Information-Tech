@@ -1,0 +1,119 @@
+﻿@model InformationTech.Models.ClientRegister
+@{
+    ViewBag.Title = "editprofile";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+
+
+<div class="ht__bradcaump__area" data--black__overlay="4" style="background: rgba(0, 0, 0, 0) url(/Content/ClientCss/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">Profile</h2>
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">Profile</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="htc__login__container text-center ptb--80 bg__white">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="login__area__wrap">
+                    <div class="login__inner">
+                        <h2 style="text-align:center;">Update Profile</h2>
+                        @using (Html.BeginForm("editprofile", "Dashboard", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+
+                            @Html.AntiForgeryToken()
+                            @Html.HiddenFor(model => model.DateAndTime, new { @Value = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") })
+                            @Html.HiddenFor(model => model.photo)
+                            @Html.HiddenFor(model => model.user_id)
+
+                                <div class="login__form__box">
+                                    <div class="login__form">
+                                        <img  src="~/Content/image/human.jpg" id="profiledisplay" onclick="triggerclick()"style="display:block;width:40%;height:240px;margin:10px auto;border-radius:70%;"/>
+                                        @Html.TextBoxFor(model => model.photo, new { type = "file",onchange="displayimg(this);",id="profileimage",name= "profileimage",accept="image/*" ,style="display:none" })
+
+
+                                       </div>
+                                    <div class="login__form">
+                                        <label style="text-align:center;"> Profile Image</label>
+
+                                    </div>
+                                    <div class="login__form">
+                                        @Html.TextBoxFor(model => model.first_name, new {maxlength="49", type = "text", required = "required", placeholder = "Enter Ur First Name", title = "Enter Password" })
+
+
+                                    </div>
+                                    <div class="login__form">
+                                        @Html.TextBoxFor(model => model.last_name, new { maxlength = "49", type = "text", required = "required", placeholder = "Enter Ur First Name", title = "Enter Password" })
+
+
+                                    </div>
+
+
+                                    
+                                    <div class="login__form">
+                                        @Html.TextBoxFor(model => model.email, new { type = "email", required = "required", placeholder = "Enter Ur Password", title = "Enter Password" })
+
+
+                                        </div>
+                                    <div class="login__form">
+                                        @Html.TextBoxFor(model => model.contact, new { type = "text", required = "required", placeholder = "Enter Ur Contact", title = "Enter Contact" ,onkeypress = "return event.charCode>=48 && event.charCode<=57;"})
+
+
+                                    </div>
+
+                                    <div class="login__btn">
+                                        <button type="submit" class="htc__btn btn--theme" name="submit" value="submit">Update</button>
+
+                                    </div>
+
+                                </div>
+                          
+                        }
+                       
+        </div>
+    </div>
+
+                </div>
+            </div>
+        
+</section>
+
+<script>
+    function triggerclick() {
+
+        document.querySelector('#profileimage').click();
+    }
+
+    function displayimg(e)
+    {
+        if (e.files[0]) {
+
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                document.querySelector('#profiledisplay').setAttribute('src', e.target.result);
+               
+
+            }
+
+            reader.readAsDataURL(e.files[0]);
+        }
+
+    }
+</script>

@@ -1,0 +1,265 @@
+﻿
+@{
+    ViewBag.Title = "result";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    /* The container */
+    .containerrdo {
+        /*display: block;*/
+        position: relative;
+        padding-left: 35px;
+        /*margin-bottom: 12px;*/
+        /*cursor: pointer;*/
+        font-size: 14px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        font-weight: normal;
+        /*margin-left: 10px;*/
+        /*user-select: none;*/
+    }
+
+        /* Hide the browser's default radio button */
+        .containerrdo input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+    /* Create a custom radio button */
+    .checkmarkrdo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .containerrdo:hover input ~ .checkmarkrdo {
+        background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .containerrdo input:checked ~ .checkmarkrdo {
+        background-color: #2196F3;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmarkrdo:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .containerrdo input:checked ~ .checkmarkrdo:after {
+        display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .containerrdo .checkmarkrdo:after {
+        top: 7px;
+        left: 7px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: white;
+    }
+</style>
+
+
+<!-- Start Bradcaump area -->
+<div class="ht__bradcaump__area" data--black__overlay="4" style="background: rgba(0, 0, 0, 0) url(/Content//ClientCss/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">Exam Result</h2>
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">Exam Result</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start Courses Grid Area -->
+<section class="htc__courses__grid bg__white ptb--80">
+    <div class="container">
+        <!-- Start Tab Menu -->
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="courses__tab__wrap">
+                    <div class="courses__grid__inner">
+                        <!-- Start Tab -->
+                        <div class="view-mode-wrap">
+                            @*<ul class="view-mode" role="tablist">
+                                    <li role="presentation" class="grid-view"><a href="#grid-view" role="tab" data-toggle="tab"><i class="icon ion-grid"></i></a></li>
+                                    <li role="presentation" class="list-view active"><a href="#list-view" role="tab" data-toggle="tab"><i class="icon ion-navicon-round"></i></a></li>
+                                </ul>*@
+                            <span class="show__result" style="text-transform:capitalize;">@ViewBag.name1 </span>
+                        </div>
+                        <!-- Start Tab -->
+                        <!-- Start Courses Search -->
+                        <div class="courses__searsh__box">
+                            @*<input type="text" placeholder="Search Courses...">
+                                <a href="#"><i class="icon ion-ios-search-strong"></i></a>*@
+                            <span class="show__result" style="text-transform:capitalize;">@ViewBag.subtitle </span>
+                        </div>
+                        <!-- End Courses Search -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Tab Menu -->
+        <!-- Start Tab Content -->
+        <div class="row">
+            <div class="col-md-11 col-lg-11 col-sm-12 col-xs-12">
+                <div class="courses__content__wrap mt--20 list__view__page">
+
+                    <!-- Start Single Content -->
+                    <div role="tabpanel" class="single__grid__view clearfix tab-pane fade in active" id="list-view">
+                        <div class="row">
+                            <!-- Start Single List -->
+                            <div class='col-xs-12'>
+
+
+
+                                @Html.Raw(ViewBag.dt)
+
+
+
+
+                                @*<div class="px-4" style=" margin-top: 10px;">
+                                        <p style="font-size:14px; margin-left:30px; color: black">
+                                            <b>
+                                                ANS: C - Rs. 698
+                                            </b><br> S.I. for 1 year = Rs. (854 - 815) = Rs. 39.
+                                            <br>
+                                            S.I. for 3 years = Rs.(39 x 3) = Rs. 117.
+                                            <br>
+                                            <img src="http://aptitudecrack.com/images/3dots9679.gif">&nbsp;Principal = Rs. (815 - 117) = Rs. 698.
+                                        </p>
+                                    </div>*@
+
+
+
+
+
+
+
+
+
+                            </div>
+
+                            <!-- End Single List -->
+
+
+                        </div>
+                    </div>
+                    <!-- End Single Content -->
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+        
+            <div class="row">
+                <div class="col-12 text-center mb-4">
+                    <br/>
+                    <h2 style="text-transform: capitalize; text-align: center;">
+                        Test Result
+                    </h2>
+                    <br/>
+                    <div class="width-4rem height-4 bg-primary my-2 mx-auto rounded"></div>
+
+                    <div class="row">
+                        <div class="htc__service__wrap">
+                            <!-- Start Single Service -->
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="service text-center">
+                                    <div class="service__icon">
+                                        <i class="fa fa-smile-o" style="font-size: 60px;"></i>
+                                    </div>
+                                    <div class="service__details">
+                                        <h2><a href="#">Total Questions @ViewBag.total_question</a></h2>
+                                        @*<p>It is a long established fact that a reader will be distracted.</p>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Service -->
+                            <!-- Start Single Service -->
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="service text-center service__color--2">
+                                    <div class="service__icon">
+                                        <i class="fa fa-check" style="font-size: 60px;"></i>
+                                    </div>
+                                    <div class="service__details">
+                                        <h2><a href="#">Currect Answer @ViewBag.correct_answer</a></h2>
+                                        @*<p>It is a long established fact that a reader will be distracted.</p>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Service -->
+                            <!-- Start Single Service -->
+                            <div class="col-md-3 col-lg-3 col-sm-4 col-xs-12">
+                                <div class="service text-center service__color--3">
+                                    <div class="service__icon">
+                                        <i class="fa fa-times" style="font-size: 60px;"></i>
+                                    </div>
+                                    <div class="service__details">
+                                        <h2><a href="#">Wrong Answer @ViewBag.wrong_answer</a></h2>
+                                        @*<p>It is a long established fact that a reader will be distracted.</p>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Service -->
+                            <!-- Start Single Service -->
+                            <div class="col-md-3 col-lg-3 hidden-sm col-xs-12">
+                                <div class="service text-center service__color--4">
+                                    <div class="service__icon">
+                                        <i class="fa fa-frown-o" style="font-size: 60px;"></i>
+                                    </div>
+                                    <div class="service__details">
+                                        <h2><a href="#">Not Attempted @ViewBag.not_attempted_question</a></h2>
+                                        @*<p>It is a long established fact that a reader will be distracted.</p>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Single Service -->
+                        </div>
+                    </div>
+                     </div>
+            </div>
+         
+
+
+
+
+    </div>
+    <!-- End Tab Content -->
+
+</section>
+<!-- End Courses Grid Area -->
+
+
+
+

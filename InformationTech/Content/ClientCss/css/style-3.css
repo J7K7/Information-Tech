@@ -1,0 +1,131 @@
+/*-----------------------------------------------------------------------------------
+  Template Name: Educan Education HTML Template.
+  Template URI: #
+  Description: Educan is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+
+
+-----------------------------------------------------------------------------------
+  
+  CSS INDEX
+  ===================
+
+  01. Google fonts
+  02. Scroll To Top
+  03. Button Style
+
+
+-----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------*/
+/*  1. Google fonts
+/*----------------------------------------*/
+
+/*
+
+    font-family: 'Roboto Slab', serif;
+
+    font-family: 'Raleway', sans-serif;
+
+*/
+
+
+/*---------------------------------------
+  02. Scroll To Top
+----------------------------------------*/
+#scrollUp {
+  border: 3px solid #7f632a;
+}
+ #scrollUp {
+  background: #e9ae37 none repeat scroll 0 0;
+}
+ 
+
+
+
+/*---------------------
+  Default Css
+-----------------------*/
+
+a:hover,
+a:focus,
+a:active {
+    color: #e9ae37;
+}
+p a:hover,
+p a:focus,
+p a:active {
+    color: #e9ae37;
+}
+
+a{
+  color: #fff;
+}
+
+*::-moz-selection {
+  background: #e9ae37 none repeat scroll 0 0;
+  color: #fff;
+  text-shadow: none;
+}
+
+*::-moz-selection {
+  background: #e9ae37 none repeat scroll 0 0;
+  color: #fff;
+  text-shadow: none;
+}
+.bg--theme{
+  background: #e9ae37;
+}
+
+/*---------------------------------------
+  End Scroll To Top
+----------------------------------------*/
+
+
+/*------------------------------
+  03. Button Style
+--------------------------------*/
+.btn--theme {
+  background: #e9ae37;
+  color: #fff;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 27px;
+}
+.btn--transparent.btn--small {
+  line-height: 44px;
+  padding: 0 23px;
+  font-size: 13px;
+  font-family: Raleway;
+  font-weight: 700;
+}
+.btn--theme::after {
+  background: #fff;
+}
+.btn--theme:hover {
+  color: #e9ae37;
+}
+
+.acount__btn .btn--theme{
+  border: 1px solid #333333;
+}
+.acount__btn .btn--theme {
+  background: #333333;
+}
+.acount__btn .btn--theme:hover {
+  color: #e9ae37;
+  border: 1px solid #e9ae37;
+}
+.indicator__style--1.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #e9ae37 none repeat scroll 0 0;
+  border: 1px solid #e9ae37;
+}
+
+
+.slider__activation__wrap.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #e9ae37 none repeat scroll 0 0;
+}
+

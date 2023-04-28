@@ -1,0 +1,140 @@
+/*-----------------------------------------------------------------------------------
+  Template Name: Educan Education HTML Template.
+  Template URI: #
+  Description: Educan is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+-------------------------------------------------------------------------------------*/
+/*
+
+
+    font-family: 'Roboto Slab', serif;
+
+    font-family: 'Raleway', sans-serif;
+
+
+*/
+/*-----------------------------
+	Footer Default
+------------------------------*/
+
+.htc__footer__top {
+  align-items: center;
+  display: flex;
+  height: 267px;
+  justify-content: center;
+  border-bottom: 1px solid #126399;
+}
+.footer__logo a {
+    display: block;
+}
+.htc__footer__address {
+    display: flex;
+}
+.footer__logo {
+    margin-bottom: 26px;
+    text-align: center;
+}
+.htc__footer__address li p {
+    color: #fff;
+    font-size: 15px;
+}
+.htc__footer__address li a {
+    font-size: 15px;
+}
+.htc__footer__address li i {
+    margin-right: 10px;
+}
+.htc__footer__address li + li {
+    margin-left: 40px;
+}
+.footer__title {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.htc__ft__list li a {
+    font-size: 14px;
+    line-height: 36px;
+    text-transform: capitalize;
+}
+.htc__ft__list {
+    margin-top: 24px;
+}
+.footer__details {
+    color: #fff;
+    margin-top: 31px;
+}
+
+.copyright__inner {
+    align-items: center;
+    display: flex;
+    height: 84px;
+    justify-content: space-between;
+}
+.htc__copyright__area {
+    border-top: 1px solid #126399;
+}
+.footer__menu {
+    display: flex;
+}
+.copyright p {
+    color: #fff;
+    font-size: 14px;
+}
+.copyright p a {
+    padding: 0 5px;
+    text-transform: capitalize;
+}
+.footer__menu li a {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+.footer__menu li + li {
+    margin-left: 31px;
+}
+
+/*-----------Footer Style 2-----------*/
+
+.footer__style--2 .htc__footer__top {
+  border-bottom: 1px solid #2e2e2e;
+}
+.footer__style--2 .htc__copyright__area {
+  border-top: 1px solid #2e2e2e;
+}
+.footer__style--2 .copyright p a {
+  color: #2db6a3;
+}
+
+/*-----------Footer Style 3-----------*/
+
+.footer__style--3 .htc__footer__top {
+  border-bottom: 1px solid #2e2e2e;
+}
+.footer__style--3 .htc__copyright__area {
+  border-top: 1px solid #2e2e2e;
+}
+.footer__style--3 .copyright p a {
+  color: #e9ae37;
+}
+
+/*-----------Footer Style 4-----------*/
+
+.footer__style--4 .htc__footer__top {
+  border-bottom: 1px solid #1f3b5f;
+}
+.footer__style--4 .htc__copyright__area {
+  border-top: 1px solid #1f3b5f;
+}
+.footer__style--4 .copyright p a {
+  color: #9f1e49;
+}
+
+
+
+
+
+
+
+

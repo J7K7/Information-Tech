@@ -1,0 +1,135 @@
+﻿@model InformationTech.Models.itvariables
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from wrappixel.com/demos/admin-templates/admin-pro/main/pages-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jan 2018 07:23:25 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/Content/assets/images/favicon.png">
+    <title>Admin Pro Admin Template - The Ultimate Bootstrap 4 Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Content/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- page css -->
+    <link href="~/Content/css/pages/login-register-lock.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="~/Content/css/style.css" rel="stylesheet">
+
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/default-dark.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body class="card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Admin Pro</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <section id="wrapper">
+        <div class="login-register" style="background-image:url(/Content/assets/images/background/login-register.jpg);">
+            <div class="login-box card">
+                <div class="card-body">
+                   
+                    @using (Html.BeginForm("forget", "techadmin", FormMethod.Post, new {@class= "form-horizontal", enctype = "multipart/form-data" }))
+                    {
+                    @*<form class="form-horizontal"  action="https://wrappixel.com/demos/admin-templates/admin-pro/main/index.html">*@
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <h3>Recover Password</h3>
+                                <p class="text-muted">Enter your Email and instructions will be sent to you! </p>
+                            </div>
+                        </div>
+                        <div class="form-group " style="@ViewBag.email">
+                            <div class="col-xs-12">
+                                @Html.TextBoxFor(model => model.email, new { @class = "form-control", placeholder = "enter email", type = "email" })
+                            </div>
+
+                            <div class="form-group text-center m-t-20">
+                                <div class="col-xs-12">
+                                    <button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light" type="submit" name="submit" value="email">submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group " style="@ViewBag.otp">
+                            <div class="col-xs-12">
+                                @Html.TextBoxFor(model => model.otp, new { @class = "form-control", placeholder = "enter 4 digit otp", type = "number" })
+
+
+                            </div>
+
+                            <div class="form-group text-center m-t-20">
+                                <div class="col-xs-12">
+                                    <button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light" type="submit" name="submit" value="otp">submit</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group " style="@ViewBag.password">
+                            <div class="col-xs-12">
+                                @Html.TextBoxFor(model => model.password, new { @class = "form-control", placeholder = "enter password", type = "password" })
+                                @Html.TextBoxFor(model => model.repassword, new { @class = "form-control", placeholder = "re-enter password", type = "password" })
+
+                            </div>
+
+                            <div class="form-group text-center m-t-20">
+                                <div class="col-xs-12">
+                                    <button class="btn btn-primary btn-lg btn-block text-uppercase waves-effect waves-light" type="submit" name="submit" value="password">submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="~/Content/assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="~/Content/assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="~/Content/assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!--Custom JavaScript -->
+    <script type="text/javascript">
+        $(function() {
+            $(".preloader").fadeOut();
+        });
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+        // ==============================================================
+        // Login and Recover Password
+        // ==============================================================
+        $('#to-recover').on("click", function() {
+            $("#loginform").slideUp();
+            $("#recoverform").fadeIn();
+        });
+    </script>
+
+</body>
+
+<!-- Mirrored from wrappixel.com/demos/admin-templates/admin-pro/main/pages-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 04 Jan 2018 07:23:25 GMT -->
+</html>

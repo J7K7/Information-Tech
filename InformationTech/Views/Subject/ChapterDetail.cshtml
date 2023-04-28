@@ -1,0 +1,110 @@
+﻿@model IEnumerable<InformationTech.Models.ChapterDetail>
+@{
+    ViewBag.Title = "ChapterDetail";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+ <!-- Start Bradcaump area -->
+<div class="ht__bradcaump__area" data--black__overlay="4" style="background: rgba(0, 0, 0, 0) url(/Content/ClientCss/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">Chapter List</h2>
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">Subject</span>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">Chapter List</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start Courses Grid Area -->
+<section class="htc__courses__grid bg__white ptb--80">
+    <div class="container">
+       <h2>Chapter :- @ViewBag.chapter</h2>
+        <!-- Start Tab Content -->
+        <div class="row">
+            <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                <div class="courses__content__wrap mt--20 list__view__page">
+                    <!-- Start Single Content -->
+                  
+                    <!-- Start Single Content -->
+                    <div role="tabpanel" class="single__grid__view clearfix tab-pane fade in active" id="list-view">
+                        <div class="row">
+                          
+                        @foreach (var item in Model)
+                        {
+
+                            <!-- Start Single List -->
+                            <div class="col-xs-12">
+                                <div class="single__list__view clearfix">
+                                    <div class="row">
+                                        <div class="col-md-5 col-lg-5 col-xs-12 col-sm-5">
+                                            <div class="single__list">
+                                                <a href="#">
+                                                    <img src="@Html.DisplayFor(modelItem => item.topic_image)" alt="list view images">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12">
+                                            <div class="list__view__inner">
+                                                <div class="lst__view__details">
+                                                    <h2><a href="courses-details.html">@Html.DisplayFor(modelItem => item.topic_tittle)</a></h2>
+                                                    <p>@Html.Raw(item.topic_detail_tittle)</p>
+                                                </div>
+                                                <div class="list__btn">
+                                                    <a class="htc__btn btn--theme" href="/Subject/TopicDetail/@Html.DisplayFor(modelItem => item.topic_id)_@Html.DisplayFor(modelItem => item.url1)">Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        }    <!-- End Single List -->
+                            
+                        </div>
+                    </div>
+                    <!-- End Single Content -->
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                <div class="htc__blog__right__sidebar mt--50">
+                    <!-- Start All Courses -->
+                    <div class="htc__blog__courses">
+                        <h2 class="title__style--2">All Chapters</h2>
+                        <ul class="blog__courses">
+
+                           @Html.Raw(ViewBag.dt)
+                            
+                        </ul>
+                    </div>
+                    <!-- End All Courses -->
+                    
+                </div>
+            </div>
+        </div>
+        <!-- End Tab Content -->
+        <!-- Start Pagenation Area -->
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <ul class="htc-pagination clearfix">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#"><i class="icon ion-ios-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Pagenation Area -->
+    </div>
+</section>
+<!-- End Courses Grid Area -->
+

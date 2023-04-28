@@ -1,0 +1,109 @@
+﻿@model InformationTech.Models.Question
+
+@{
+    ViewBag.Title = "Question Add";
+    Layout = "~/Views/_LayoutPageAdmin.cshtml";
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="~/Content/ckeditor/ckeditor.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-themecolor">Add Question</h3>
+        </div>
+        <div class="col-md-7 align-self-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("DashBoard","techadmin")">Home</a></li>
+                <li class="breadcrumb-item">Exam</li>
+                <li class="breadcrumb-item active">Add Question</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <!-- Row -->
+
+
+
+
+    @using (Html.BeginForm("QuestionAdd", "techadmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.DateAndTime, new { @Value = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") })
+        @Html.HiddenFor(model => model.subject_id)
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header btn-primary">
+
+                        <h4 class="m-b-0 text-white">Form For Add Question</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form p-t-20">
+
+
+                            <div class="row">
+
+
+                               
+                                <br />
+
+
+
+
+
+
+
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        
+                                        
+                                        <br />
+                                        <div class="input-group" style="width:100%;">
+                                            <div class="input-group-addon"><i class="ti-layers-alt"></i></div>
+
+                                            @Html.TextAreaFor(model => model.question, new { placeholder = "Enter Question", id = "exampleInputuname", title = "Enter Question", @class = "form-control", style = "width: 100%;" })
+                                            <script> CKEDITOR.replace("exampleInputuname"); </script>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light btn-success  text-uppercase " type="submit" value="question" name="submit">Add Question</button>
+                        &nbsp;&nbsp;
+                        <a href="@Url.Action("QuestionView","techadmin",new { id = ViewBag.id})" , class="btn waves-effect waves-light btn-danger">Cancel</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>
+
+
+
+
+

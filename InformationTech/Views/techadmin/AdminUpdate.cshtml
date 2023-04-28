@@ -1,0 +1,144 @@
+﻿@model InformationTech.Models.itvariables
+@{
+    ViewBag.Title = "AdminUpdate";
+    Layout = "~/Views/_LayoutPageAdmin.cshtml";
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script>
+    function imagepreviewcust(input) {
+        if (input.files) {
+
+            var fildr = new FileReader();
+            fildr.onload = function (e) {
+                $('#imgprwcust').attr('src', e.target.result);
+                $('#imgprwcust').attr('style', "width: 100px; height: 100px; border-radius: 50px;");
+                //style = "width: 100px; height: 100px; border-radius: 50px;"
+                // alert(e.target.result);
+            }
+            fildr.readAsDataURL(input.files[0]);
+        }
+    }
+</script>
+
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-themecolor">Admin Update Form</h3>
+        </div>
+        <div class="col-md-7 align-self-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("DashBoard","techadmin")">Home</a></li>
+                <li class="breadcrumb-item">Admin</li>
+                <li class="breadcrumb-item active">Admin Update</li>
+            </ol>
+        </div>
+        @*<div class="">
+                <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+            </div>*@
+    </div>
+    <h2>@ViewBag.ab</h2>
+
+    @using (Html.BeginForm("AdminUpdate", "techadmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.DateAndTime, new { @Value = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") })
+        @Html.HiddenFor(model => model.id)
+        @Html.HiddenFor(model => model.photo)
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header bg-info">
+                        <h4 class="m-b-0 text-white">Update Here</h4>
+                    </div>
+                    <div class="card-body">
+
+
+
+
+                        <div class="form p-t-20">
+
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputuname">User Name</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="ti-user"></i></div>
+
+                                            @Html.TextBoxFor(model => model.name, new { maxlength = "49", required = "required", placeholder = "Enter Ur Name", id = "exampleInputuname", title = "Enter Name", @class = "form-control" })
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="ti-email"></i></div>
+
+                                            @Html.TextBoxFor(model => model.email, new { @class = "form-control", required = "required", type = "email",  placeholder = "Enter Ur Email", id = "exampleInputEmail1", title = "Enter Email" })
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="contact">Mobile No.</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="ti-mobile"></i></div>
+
+                                            @Html.TextBoxFor(model => model.contact, new { @class = "form-control", type = "text", required = "required", placeholder = "Enter Contact Number", onkeypress = "return event.charCode>=48 && event.charCode<=57;", id = "contact", title = "Enter Contact", maxlength = "10", minlength = "10" })
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <label for="Photo">Photo</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="ti-camera"></i></div>
+
+                                            @Html.TextBoxFor(model => model.photo, new { @class = "form-control", type = "file", id = "photo", name = "photo", accept = "image/*", title = "Enter Photo", onchange = "imagepreviewcust(this);", required = "required" })
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="form-group">
+                                        <div class="input-group">
+
+
+                                            <img id="imgprwcust" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <button type="submit" class="btn btn-success waves-effect waves-light m-r-10" name="submit" value="submit">Submit</button>
+                            
+                            <a href="@Url.Action("AdminView","techadmin")" class="btn btn-inverse waves-effect waves-light text-uppercase ">Back</a>
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>

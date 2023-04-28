@@ -1,0 +1,101 @@
+﻿@model InformationTech.Models.topicsourcecode
+
+@{
+    ViewBag.Title = "Update Topic Source Code";
+    Layout = "~/Views/_LayoutPageAdmin.cshtml";
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="~/Content/ckeditor/ckeditor.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-themecolor">Update Topic Source Code</h3>
+        </div>
+        <div class="col-md-7 align-self-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("DashBoard","techadmin")">Home</a></li>
+                <li class="breadcrumb-item">Topic Source Code</li>
+                <li class="breadcrumb-item active">Update Topic Source Code</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <!-- Row -->
+
+
+
+
+    @using (Html.BeginForm("TopicSourceCodeUpdate", "techadmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.DateAndTime, new { @Value = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") })
+        @Html.HiddenFor(model => model.topic_source_code_id)
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header btn-primary">
+
+                        <h4 class="m-b-0 text-white">Update Topic Source Code Here</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form p-t-20">
+
+
+                            <div class="row">
+                                <div class="col-lg-12">
+
+
+                                   
+
+
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group">
+                                                <label for="exampleInputuname"><h3>Topic Source Code</h3></label>
+                                                <div class="input-group" style="width:100%;">
+                                                    <div class="input-group-addon"><i class="ti-layers-alt"></i></div>
+
+                                                    @Html.TextAreaFor(model => model.topic_source_code, new { placeholder = "Enter Topic Source Code", id = "exampleInputuname", title = "Enter Topic Source Code", @class = "form-control", style = "width: 100%;" })
+                                                    <script> CKEDITOR.replace("exampleInputuname"); </script>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light btn-success  text-uppercase " type="submit" value="topic_source_code" name="submit">Add Topic Source Code</button>
+
+                        &nbsp;&nbsp;
+                        <a href="@Url.Action("TopicSourceCodeView","techadmin",new { id = ViewBag.id2})" class="btn waves-effect waves-light btn-danger">Back</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>

@@ -1,0 +1,90 @@
+﻿@model InformationTech.Models.TopicDetail
+
+@{
+    ViewBag.Title = "Topic  Detail Update";
+    Layout = "~/Views/_LayoutPageAdmin.cshtml";
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script src="~/Content/ckeditor/ckeditor.js"></script>
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-themecolor">Update Topic Detail</h3>
+        </div>
+        <div class="col-md-7 align-self-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("DashBoard","techadmin")">Home</a></li>
+                <li class="breadcrumb-item">Topic Detail</li>
+                <li class="breadcrumb-item active">Update Topic Detail</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <!-- Row -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    @using (Html.BeginForm("TopicDetailUpdate", "techadmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.dateandtime, new { @Value = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") })
+        @Html.HiddenFor(model => model.topic_detail_id)
+
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header btn-primary">
+
+                        <h4 class="m-b-0 text-white">Topic Detail Update Here</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form p-t-20">
+
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    
+                                    <div class="form-group">
+                                        <label for="exampleInputuname">Topic tittle</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="ti-layers-alt"></i></div>
+
+                                            @Html.TextAreaFor(model => model.topic_detail_tittle, new { placeholder = "Enter Topic Detail", id = "exampleInputuname", title = "Enter Topic Detail", @class = "form-control" })
+                                            <script> CKEDITOR.replace("exampleInputuname"); </script>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light btn-success  text-uppercase " type="submit" value="topic_detail_update" name="submit">Add Topic Detail</button>
+
+                        &nbsp;&nbsp;
+                        <a href="@Url.Action("TopicDetailView","techadmin",new { id = ViewBag.id2})" class="btn waves-effect waves-light btn-danger">Back</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>
+
+
+

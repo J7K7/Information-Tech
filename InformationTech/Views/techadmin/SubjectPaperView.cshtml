@@ -1,0 +1,267 @@
+﻿@model InformationTech.Models.paper
+
+@{
+    ViewBag.Title = "Subject Paper View";
+    Layout = "~/Views/_LayoutPageAdmin.cshtml";
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="~/Content/ckeditor/ckeditor.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-themecolor">Subject Paper View</h3>
+        </div>
+        <div class="col-md-7 align-self-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("DashBoard","techadmin")">Home</a></li>
+                <li class="breadcrumb-item">Paper</li>
+                <li class="breadcrumb-item active">Subject Paper View</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <!-- Row -->
+
+
+
+
+    @using (Html.BeginForm("SubjectPaperView", "techadmin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+
+        @Html.AntiForgeryToken()
+
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card">
+                    <div class="card-header btn-primary">
+
+                        <h4 class="m-b-0 text-white">Form For Subject Paper View</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form p-t-20">
+
+
+                            <div class="row">
+
+
+                                <div class="col-lg-12">
+
+                                    @Html.DropDownList("stream_id", (SelectList)ViewBag.DropDownValueStream, new { @class = "form-control", onchange = "OnStreamSelected(this)" })
+                                    <p id="errorStream"></p>
+
+                                </div>
+
+
+
+                            </div>
+                            <br />
+
+                            <div class="row">
+
+                                <div class="col-lg-12">
+                                    @Html.DropDownList("class_id", (SelectList)ViewBag.DropDownValueClass, new { @class = "form-control", onchange = "OnClassSelected(this)" })
+                                    <p id="errorClass"></p>
+                                </div>
+
+                            </div>
+                            <br />
+
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    @Html.DropDownList("subject_id", (SelectList)ViewBag.DropDownValueSubject, new { @class = "form-control" })
+                                </div>
+
+                            </div>
+                            <br />
+                        </div>
+                        <button class="btn waves-effect waves-light btn-success  text-uppercase " type="submit" value="subjectpaper" name="submit">Enter</button>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>
+
+
+
+
+<script type="text/javascript">
+    function OnStreamSelected(sender, eventArgs) {
+
+
+        var code = document.getElementById("stream_id").value;
+
+
+
+
+        //alert(code);
+        if (code == 0) {
+            var ans = "<h4 class='vk-heading vk-main-heading'>  <span style='color: red;'> Please Select Stream* </span> </h4>";
+            //"<h4 class='vk-heading vk-main-heading'>  <span style='color: red;'> No Records Found.* </span> </h4>"
+            document.getElementById("errorStream").innerHTML = ans;
+
+            var markup = "";
+            $("#class_id").html(markup).show();
+            $("#subject_id").html(markup).show();
+
+        }
+        else {
+
+            document.getElementById("errorStream").innerHTML = "";
+
+            $.ajax({
+                type: "POST",
+                url: "/WebService1.asmx/GetClassDetails",
+                //data: "{'sid':'" + eventArgs.get_value() + "'}",
+                data: "{'sid':'" + code + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: OnSuccessClass,
+                error: OnError
+            });
+        }
+
+    }
+
+
+
+    function OnSuccessClass(data, status) {
+
+
+        var supdata;
+        var jsonData = JSON.parse(data.d);
+        var markup = "<option value='0'>Select Class</option>";
+        for (var i = 0; i < jsonData.length; i++) {
+            supdata = jsonData[i];
+
+            //alert(supdata.branch_code);
+            //document.getElementById("branch_code").value = supdata.branch_code;
+            markup += "<option value='" + supdata.class_id + "'>" + supdata.class_name + "</option>";
+            //alert(markup);
+        }
+
+
+
+        if (supdata == null) {
+
+            alert("Please Add Class/Sem First.");
+
+            var markups = "";
+            $("#class_id").html(markups).show();
+
+
+
+
+        }
+        else {
+
+            $("#class_id").html(markup).show();
+
+        }
+
+    }
+    function OnError(request, status, error) {
+        alert("error" + request.statusText);
+    }
+
+
+    function OnClassSelected(sender, eventArgs) {
+
+
+        var code = document.getElementById("class_id").value;
+
+
+
+
+        //alert(code);
+        if (code == 0) {
+            var ans = "<h4 class='vk-heading vk-main-heading'>  <span style='color: red;'> Please Select Class* </span> </h4>";
+            //"<h4 class='vk-heading vk-main-heading'>  <span style='color: red;'> No Records Found.* </span> </h4>"
+            document.getElementById("errorClass").innerHTML = ans;
+
+            var markup = "";
+            $("#subject_id").html(markup).show();
+
+
+        }
+        else {
+
+            document.getElementById("errorClass").innerHTML = "";
+
+            $.ajax({
+                type: "POST",
+                url: "/WebService1.asmx/GetSubjectDetails",
+                //data: "{'sid':'" + eventArgs.get_value() + "'}",
+                data: "{'cid':'" + code + "'}",
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: OnSuccessSubject,
+                error: OnErrorSubject
+            });
+        }
+
+    }
+
+
+
+    function OnSuccessSubject(data, status) {
+
+
+        var supdata;
+        var jsonData = JSON.parse(data.d);
+        var markup = "<option value='0'>Select Subject</option>";
+        for (var i = 0; i < jsonData.length; i++) {
+            supdata = jsonData[i];
+
+            //alert(supdata.branch_code);
+            //document.getElementById("branch_code").value = supdata.branch_code;
+            markup += "<option value='" + supdata.subject_id + "'>" + supdata.subject_name + "</option>";
+            //alert(markup);
+        }
+
+
+
+        if (supdata == null) {
+
+            alert("Please Add Subject.");
+
+            var markups = "";
+            $("#subject_id").html(markups).show();
+
+
+
+
+        }
+        else {
+
+            $("#subject_id").html(markup).show();
+
+        }
+
+    }
+    function OnErrorSubject(request, status, error) {
+        alert("error" + request.statusText);
+    }
+
+
+</script>

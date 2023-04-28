@@ -1,0 +1,113 @@
+﻿@model IEnumerable<InformationTech.Models.member>
+@{
+    ViewBag.Title = "MemberView";
+    Layout = "~/Views/_LayoutPageAdmin.cshtml";
+}
+
+
+
+
+
+
+
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-themecolor">Members View</h3>
+        </div>
+        <div class="col-md-7 align-self-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("DashBoard","techadmin")">Home</a></li>
+                <li class="breadcrumb-item">Membership</li>
+                <li class="breadcrumb-item active">Members</li>
+            </ol>
+        </div>
+        @*<div>
+                <button class="right-side-toggle waves-effect waves-light btn-inverse btn btn-circle btn-sm pull-right m-l-10"><i class="ti-settings text-white"></i></button>
+            </div>*@
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                  
+                    <div class="table-responsive m-t-40">
+                        <table id="example23" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0">
+
+                            <thead>
+                                <tr>
+                                    <th>Sr.No.</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Joining Date</th>
+                                    <th>Expiry Date</th>
+                                    <th>Price</th>
+                                   
+                                </tr>
+                            </thead>
+
+
+                            @{
+                                int sno = 0;
+                            }
+                            <tbody>
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@{ sno++; } @sno  </td>
+                                        
+                                        <td> @Html.DisplayFor(modelItem => item.name)</td>
+                                        <td> @Html.DisplayFor(modelItem => item.email)</td>
+                                        <td> @Html.DisplayFor(modelItem => item.dateandtime)</td>
+                                        <td> @Html.DisplayFor(modelItem => item.exday)</td>
+                                        <td> @Html.DisplayFor(modelItem => item.price)</td>
+                                        
+
+                                    </tr>
+                                            }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End PAge Content -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+</div>
+<script src="http://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+<script src="http://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="http://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="http://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="http://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+<script src="http://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+<!-- end - This is for export functionality only -->
+<script>
+
+    $('#example23').DataTable({
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    });
+</script>
+<!-- ============================================================== -->
+<!-- Style switcher -->
+<!-- ============================================================== -->

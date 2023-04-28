@@ -1,0 +1,186 @@
+﻿@model IEnumerable<InformationTech.Models.Class_detail>
+@{
+    ViewBag.Title = "Class View";
+    Layout = "~/Views/_LayoutPageAdmin.cshtml";
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-themecolor">Class\Semester View</h3>
+        </div>
+        
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                  
+                    
+                        <div class="row">
+                            <div class="col-9">
+                                <a href="@Url.Action("ClassAdd","techadmin")"  class="btn waves-effect waves-light btn-success  text-uppercase ">Add Class</a>
+                            </div>
+                            <div class="col-3">
+                                <select name="taskOption" id="myinput" onchange="myfunction()"  onclick="jsfunction()" class="form-control">
+                                    <option value="none"> Select Stream</option>
+
+                                    @for (int i = 0; i < ViewBag.dt.Rows.Count; i++)
+                                    {
+                                        <option value="@ViewBag.dt.Rows[i]["stream_id"].ToString()">@ViewBag.dt.Rows[i]["stream"].ToString()</option>
+                                    }
+                                </select>
+                            </div>
+
+                            
+                         </div>
+                       
+                   
+                        
+                   
+                    <div class="table-responsive m-t-40">
+                        <table id="example23"  class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+
+                            <thead>
+                                <tr>
+                                    <th>Sr.No.</th>
+                                    <th>Date And Time</th>
+                                    <th>Class\Sem Name</th>
+                                    <th style="display:none;"> Stream Id</th>
+
+                                    <th>Edit</th>
+                                    <th>Delete</th>
+                                    <th>Subjects</th>
+                                </tr>
+                            </thead>
+
+                            
+                            @{
+                                int sno = 0;
+                            }
+                            <tbody>
+
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>@{ sno++; } @sno  </td>
+                                        <td> @Html.DisplayFor(modelItem => item.DateAndTime)</td>
+                                        <td> @Html.DisplayFor(modelItem => item.class_name)</td>
+                                        <td style="display:none;"> @Html.DisplayFor(modelItem => item.stream_id)</td>
+
+                                        <td> @Html.ActionLink(" ", "ClassUpdate", new { id = item.class_id }, new { @class = "fa fa-pencil fa-2x", title = "Edit" }) </td>
+                                        <td> @Html.ActionLink(" ", "ClassDelete", new { ID = item.class_id }, new { onclick = "return confirm('Do you really want to delete this record?')", @class = "fa fa-trash fa-2x", title = "Delete" })</td>
+                                        <td> @Html.ActionLink(" ", "SubjectView", new { id = item.class_id }, new { @class = "fa fa-plus", title = "AddSubject" }) </td>
+
+
+                                    </tr>
+                                            }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End PAge Content -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+</div>
+<table style="display:none;" id="mytable" name="mytable">
+
+</table>
+<!-- Bootstrap tether Core JavaScript -->
+
+<script src="~/Content/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+<!-- start - This is for export functionality only -->
+<script src="http://cdn.datatables.net/buttons/1.2.2/js/dataTables.buttons.min.js"></script>
+<script src="http://cdn.datatables.net/buttons/1.2.2/js/buttons.flash.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js"></script>
+<script src="http://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/pdfmake.min.js"></script>
+<script src="http://cdn.rawgit.com/bpampuch/pdfmake/0.1.18/build/vfs_fonts.js"></script>
+<script src="http://cdn.datatables.net/buttons/1.2.2/js/buttons.html5.min.js"></script>
+<script src="http://cdn.datatables.net/buttons/1.2.2/js/buttons.print.min.js"></script>
+<!-- end - This is for export functionality only -->
+<script>
+   // $('#example23 tr').find('td:eq(4),td:eq(5),td:eq(6)').hide();
+    $('#example23').DataTable({
+        dom: 'Bfrtip',
+        
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+       
+    });
+
+    
+</script>
+<!-- ============================================================== -->
+<!-- Style switcher -->
+<!-- ============================================================== -->
+<script src="~/Content/assets/plugins/styleswitcher/jQuery.style.switcher.js"></script>
+
+<script>
+    function myfunction() {
+
+        var input, filter, table, tr, td, i, txtvalue
+        input = document.getElementById("myinput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("example23");
+        tr = table.getElementsByTagName("tr");
+       
+            for (i = 0 ; i < tr.length; i++) {
+
+                td = tr[i].getElementsByTagName("td")[3];
+                if (td) {
+                    txtvalue = td.textContent || td.innerText;
+                    if (txtvalue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+
+                    }
+                    else {
+                        tr[i].style.display = "none";
+                    }
+
+                }
+            }
+            if (filter == "NONE") {
+                for (i = 0 ; i < tr.length; i++) {
+
+                    td = tr[i].getElementsByTagName("td")[3];
+                    if (td) {
+                        txtvalue = td.textContent || td.innerText;
+
+                        tr[i].style.display = "";
+
+
+
+                    }
+                }
+            }
+
+    }
+
+
+    
+
+
+    
+</script>

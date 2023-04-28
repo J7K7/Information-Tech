@@ -1,0 +1,137 @@
+﻿@model IEnumerable<InformationTech.Models.tblExam_Result>
+@{
+    ViewBag.Title = "result";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+<style>
+    table.table td{
+        text-align:center;
+      }
+
+    th {
+        text-align:center;
+    }
+    
+    h4 {
+        line-height: 1.4;
+        font-size: 26px;
+    }
+
+
+    h1, h2, h3, h4, h5 {
+        font-family: Merriweather;
+        color: #333333;
+        clear: both;
+        font-weight: 400;
+        margin: 17px,0,12px;
+    }
+</style>
+
+<div class="ht__bradcaump__area" data--black__overlay="4" style="background: rgba(0, 0, 0, 0) url(/Content/ClientCss/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">Result</h2>
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">Result</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="padding-bottom:50px;padding-top:40px;">
+    <div class="col-md-4" style="padding-top:20px;">
+
+        <img src="@ViewBag.image" style="text-align:center;height:150px;width:400px;padding:4px;float:right;padding-left:250px;" />
+    </div>
+
+    <div class="col-md-8" style="padding-top:30px;">
+        <h2>@ViewBag.name1 @ViewBag.name2 </h2>
+        <br>
+        <table style="width:100%; font-size: large;">
+            <tbody>
+                <tr>
+                    <td style="width: 20%;"><b>Email ID</b></td>
+                    <td>:</td>
+                    <td>@ViewBag.email</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><br></td>
+                </tr>
+                <tr>
+                    <td style="width: 20%;"><b>Contact</b></td>
+                    <td>:</td>
+                    <td>@ViewBag.contact</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+
+
+
+
+    </div>
+    
+</div>
+<hr style="height:1px;border-top:1px solid #bfbfbf;margin-top:0px;margin-bottom:0px;padding-top:2px;" />
+<div class="row" style="background:url(/Content/image/bg.jpg),linear-gradient(rgba(255, 255, 255, 1.00), rgba(255, 255, 255, 1.00));background-repeat:repeat;padding-bottom:50px;padding-top:50px;" >
+    <center>
+
+        <table class="table" style="width:500px;margin-top:10px;opacity:1;" border="1">
+            <thead>
+                <tr colspan="8">
+                    <h2>Exam Detail</h2>
+
+                </tr>
+                <tr>
+
+                    <th>Sr.No.</th>
+                    <th>Subject Name</th>
+                    <th>Exam Date</th>
+                    <th>Total Question</th>
+                    <th>Attempted Question</th>
+                    <th>Not Attempted Question</th>
+                    <th> Correct Answer</th>
+                    <th> Wrong Answer</th>
+                </tr>
+            </thead>
+            @{
+                int sno = 0;
+            }
+            <tbody>
+                @foreach (var item in Model)
+                {
+
+               <tr>
+                   <td>@{ sno++; } @sno</td>
+                   <td>@Html.DisplayFor(modelItem => item.subject_name)</td>
+                   <td>@Html.DisplayFor(modelItem => item.datetime)</td>
+                   <td>@Html.DisplayFor(modelItem => item.total_question)</td>
+                   <td>@Html.DisplayFor(modelItem => item.attempted_question)</td>
+                   <td>@Html.DisplayFor(modelItem => item.not_attempted_question)</td>
+                   <td> @Html.DisplayFor(modelItem => item.correct_answer)</td>
+                   <td>@Html.DisplayFor(modelItem => item.wrong_answer)</td>
+               </tr> 
+              }
+            </tbody>
+        </table>
+    </center>
+</div>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,172 @@
+﻿@model IEnumerable<InformationTech.Models.ClientVariables>
+
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+
+<style>
+    /* The container */
+    .containerrdo {
+        /*display: block;*/
+        position: relative;
+        padding-left: 35px;
+        /*margin-bottom: 12px;*/
+        cursor: pointer;
+        font-size: 14px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        font-weight: normal;
+        margin-left: 10px;
+        /*user-select: none;*/
+    }
+
+        /* Hide the browser's default radio button */
+        .containerrdo input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+    /* Create a custom radio button */
+    .checkmarkrdo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .containerrdo:hover input ~ .checkmarkrdo {
+        background-color: #ccc;
+    }
+
+    /* When the radio button is checked, add a blue background */
+    .containerrdo input:checked ~ .checkmarkrdo {
+        background-color: #2196F3;
+    }
+
+    /* Create the indicator (the dot/circle - hidden when not checked) */
+    .checkmarkrdo:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the indicator (dot/circle) when checked */
+    .containerrdo input:checked ~ .checkmarkrdo:after {
+        display: block;
+    }
+
+    /* Style the indicator (dot/circle) */
+    .containerrdo .checkmarkrdo:after {
+        top: 7px;
+        left: 7px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: white;
+    }
+</style>
+
+
+<div class="ht__bradcaump__area" data--black__overlay="4" style="background: rgba(0, 0, 0, 0) url(/Content/ClientCss/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">Courses List</h2>
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">Courses List</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start Courses Grid Area -->
+<section class="htc__courses__grid bg__white ptb--80">
+    <div class="container">
+        <!-- Start Tab Menu -->
+        <!-- End Tab Menu -->
+        <!-- Start Tab Content -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="courses__content__wrap mt--20">
+                    <!-- Start Single Content -->
+                    <!-- End Single Content -->
+                    <!-- Start Single Content -->
+                    <div role="tabpanel" class="single__grid__view clearfix tab-pane fade in active" id="list-view">
+                        <div class="row">
+
+                            <!-- Start Single List -->
+                    @using (Html.BeginForm("Index", "Exam", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+
+                            @Html.AntiForgeryToken()
+
+                            foreach (var item in Model)
+                            {
+
+                                <div class="col-xs-12">
+                                    <div class="single__list__view clearfix">
+                                        <div class="row">
+                                            <div class="col-md-5 col-lg-5 col-xs-12 col-sm-5">
+                                                <div class="single__list">
+                                                    
+                                                        <img src="@Html.DisplayFor(modelItem => item.subject_image)" alt="list view images" style="height:300px;width:400px;">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12">
+                                                <div class="list__view__inner">
+                                                    <div class="lst__view__details">
+                                                        <h2><a href="courses-details.html">@Html.DisplayFor(modelItem => item.subject)</a></h2>
+
+                                                    </div>
+                                                    <div class="list__btn">
+                                                        <button type ="submit" class="htc__btn btn--theme" name="submit" value="@Html.DisplayFor(modelItem => item.subject_id)">Start Test</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                    }
+                            <!-- End Single List -->
+                            <!-- End Single List -->
+                        </div>
+                    </div>
+                    <!-- End Single Content -->
+                </div>
+            </div>
+        </div>
+        <!-- End Tab Content -->
+        <!-- Start Pagenation Area -->
+        <!-- Start Pagenation Area -->
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <ul class="htc-pagination clearfix">
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#"><i class="icon ion-ios-arrow-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Pagenation Area -->
+        <!-- End Pagenation Area -->
+    </div>
+</section>
+<!-- End Courses Grid Area -->

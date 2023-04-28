@@ -1,0 +1,47 @@
+﻿@model IEnumerable<InformationTech.Models.Exampaper>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+
+<center>
+    <h1 style="padding-bottom:10px;"><b> Old Exam Paper</b></h1>
+    <table class="table table-striped" border="1" style="width:500px;">
+
+
+        <tr>
+            <th> Sr no.</th>
+            <th> month.</th>
+            <th> year.</th>
+            <th> paper</th>
+        </tr>
+        @{
+            int sno = 0;
+        }
+
+
+        @foreach (var item in Model)
+            {
+
+            <tr>
+                <td> @{ sno++; } @sno</td>
+                <td>@Html.DisplayFor(modelItem => item.month)</td>
+                <td>@Html.DisplayFor(modelItem => item.year)</td>
+                <td><a id="jk" class="jk" href="@Html.DisplayFor(modelItem => item.paper)" target="_blank" style="">@Html.DisplayFor(modelItem => item.subject)</a></td>
+
+            </tr>
+                    }
+    </table>
+
+</center>
+<style>
+    a.jk {
+        color: blueviolet;
+    }
+
+        a.jk:hover {
+            color: red;
+        }
+</style>

@@ -1,0 +1,553 @@
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\ApplicationInsights.config
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\csc.exe
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\vbc.exe
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\InformationTech.dll.config
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\InformationTech.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\InformationTech.pdb
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Razor.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Razor.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+F:\first_Project\Information Tech\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+F:\first_Project\Information Tech\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+F:\first_Project\Information Tech\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+F:\first_Project\InformationTech\InformationTech\bin\ApplicationInsights.config
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\csc.exe
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\vbc.exe
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+F:\first_Project\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+F:\first_Project\InformationTech\InformationTech\bin\InformationTech.dll.config
+F:\first_Project\InformationTech\InformationTech\bin\InformationTech.dll
+F:\first_Project\InformationTech\InformationTech\bin\InformationTech.pdb
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Razor.dll
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+F:\first_Project\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Razor.xml
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+F:\first_Project\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+F:\first_Project\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+F:\first_Project\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+E:\Project\InformationTech\InformationTech\bin\ApplicationInsights.config
+E:\Project\InformationTech\InformationTech\bin\roslyn\csc.exe
+E:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Project\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+E:\Project\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+E:\Project\InformationTech\InformationTech\bin\roslyn\vbc.exe
+E:\Project\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+E:\Project\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+E:\Project\InformationTech\InformationTech\bin\InformationTech.dll.config
+E:\Project\InformationTech\InformationTech\bin\InformationTech.dll
+E:\Project\InformationTech\InformationTech\bin\InformationTech.pdb
+E:\Project\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+E:\Project\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+E:\Project\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\Project\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\Project\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+E:\Project\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+E:\Project\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+E:\Project\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Project\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+E:\Project\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+E:\Project\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+E:\Project\InformationTech\InformationTech\bin\System.Web.Razor.dll
+E:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+E:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+E:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+E:\Project\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+E:\Project\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\Project\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+E:\Project\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+E:\Project\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+E:\Project\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Project\InformationTech\InformationTech\bin\System.Web.Razor.xml
+E:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+E:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+E:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+E:\Project\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+E:\Project\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+E:\Project\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+E:\Project\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+E:\Project\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+F:\Project\InformationTech\InformationTech\bin\ApplicationInsights.config
+F:\Project\InformationTech\InformationTech\bin\roslyn\csc.exe
+F:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Project\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+F:\Project\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+F:\Project\InformationTech\InformationTech\bin\roslyn\vbc.exe
+F:\Project\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+F:\Project\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+F:\Project\InformationTech\InformationTech\bin\InformationTech.dll.config
+F:\Project\InformationTech\InformationTech\bin\InformationTech.dll
+F:\Project\InformationTech\InformationTech\bin\InformationTech.pdb
+F:\Project\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Project\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+F:\Project\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Project\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Project\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+F:\Project\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+F:\Project\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+F:\Project\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Project\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+F:\Project\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+F:\Project\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+F:\Project\InformationTech\InformationTech\bin\System.Web.Razor.dll
+F:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+F:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+F:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+F:\Project\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+F:\Project\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Project\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+F:\Project\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+F:\Project\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+F:\Project\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Project\InformationTech\InformationTech\bin\System.Web.Razor.xml
+F:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+F:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+F:\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+F:\Project\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+F:\Project\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+F:\Project\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+F:\Project\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+F:\Project\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\ApplicationInsights.config
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\csc.exe
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\vbc.exe
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\InformationTech.dll.config
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\InformationTech.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\InformationTech.pdb
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Razor.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Razor.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+C:\Users\SIMBA\Desktop\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+F:\InformationTech\InformationTech\bin\ApplicationInsights.config
+F:\InformationTech\InformationTech\bin\roslyn\csc.exe
+F:\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+F:\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+F:\InformationTech\InformationTech\bin\roslyn\vbc.exe
+F:\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+F:\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+F:\InformationTech\InformationTech\bin\InformationTech.dll.config
+F:\InformationTech\InformationTech\bin\InformationTech.dll
+F:\InformationTech\InformationTech\bin\InformationTech.pdb
+F:\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+F:\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+F:\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+F:\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+F:\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+F:\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+F:\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+F:\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+F:\InformationTech\InformationTech\bin\System.Web.Razor.dll
+F:\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+F:\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+F:\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+F:\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+F:\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+F:\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+F:\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+F:\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\InformationTech\InformationTech\bin\System.Web.Razor.xml
+F:\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+F:\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+F:\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+F:\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+F:\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+F:\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+F:\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+F:\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\ApplicationInsights.config
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\csc.exe
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\vbc.exe
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\InformationTech.dll.config
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\InformationTech.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\InformationTech.pdb
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Razor.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Razor.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+C:\Users\JAINISH\Desktop\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+F:\Project\Project\InformationTech\InformationTech\bin\ApplicationInsights.config
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\csc.exe
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\vbc.exe
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+F:\Project\Project\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+F:\Project\Project\InformationTech\InformationTech\bin\InformationTech.dll.config
+F:\Project\Project\InformationTech\InformationTech\bin\InformationTech.dll
+F:\Project\Project\InformationTech\InformationTech\bin\InformationTech.pdb
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Razor.dll
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+F:\Project\Project\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Razor.xml
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+F:\Project\Project\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+F:\Project\Project\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+F:\Project\Project\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+F:\Project\Project\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\ApplicationInsights.config
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\csc.exe
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\vbc.exe
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\InformationTech.dll.config
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\InformationTech.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\InformationTech.pdb
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Razor.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Razor.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\obj\Debug\InformationTech.csproj.CoreCompileInputs.cache
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+C:\Users\TyCoon\Downloads\Telegram Desktop\Project\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+F:\simba\InformationTech\InformationTech\bin\ApplicationInsights.config
+F:\simba\InformationTech\InformationTech\bin\roslyn\csc.exe
+F:\simba\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\simba\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\simba\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\simba\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\simba\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\simba\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\simba\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+F:\simba\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+F:\simba\InformationTech\InformationTech\bin\roslyn\vbc.exe
+F:\simba\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+F:\simba\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+F:\simba\InformationTech\InformationTech\bin\InformationTech.dll.config
+F:\simba\InformationTech\InformationTech\bin\InformationTech.dll
+F:\simba\InformationTech\InformationTech\bin\InformationTech.pdb
+F:\simba\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+F:\simba\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+F:\simba\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\simba\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\simba\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+F:\simba\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+F:\simba\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+F:\simba\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\simba\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+F:\simba\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+F:\simba\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+F:\simba\InformationTech\InformationTech\bin\System.Web.Razor.dll
+F:\simba\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+F:\simba\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+F:\simba\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+F:\simba\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+F:\simba\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\simba\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+F:\simba\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+F:\simba\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+F:\simba\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\simba\InformationTech\InformationTech\bin\System.Web.Razor.xml
+F:\simba\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+F:\simba\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+F:\simba\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+F:\simba\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+F:\simba\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+F:\simba\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+F:\simba\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+F:\simba\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\ApplicationInsights.config
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\csc.exe
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\vbc.exe
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\InformationTech.dll.config
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\InformationTech.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\InformationTech.pdb
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Razor.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Razor.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\obj\Debug\InformationTech.csproj.CoreCompileInputs.cache
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+D:\Student Project\Dot Net\2019-20\Project-Jainish-Simba\InformationTech\InformationTech\obj\Debug\InformationTech.pdb
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\ApplicationInsights.config
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\csc.exe
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\System.Collections.Immutable.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\System.Reflection.Metadata.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\vbc.exe
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\roslyn\VBCSCompiler.exe.config
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\InformationTech.dll.config
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\InformationTech.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\InformationTech.pdb
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.AI.Web.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.Web.Infrastructure.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Helpers.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Mvc.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Razor.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Webpages.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.AI.DependencyCollector.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.AI.Web.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.AI.WindowsServer.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.ApplicationInsights.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Razor.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Webpages.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Webpages.Deployment.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Webpages.Razor.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Helpers.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\bin\System.Web.Mvc.xml
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\obj\Debug\InformationTech.csprojResolveAssemblyReference.cache
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\obj\Debug\InformationTech.dll
+F:\Final-Project\02-06-2020-InformationTech\InformationTech\InformationTech\obj\Debug\InformationTech.pdb

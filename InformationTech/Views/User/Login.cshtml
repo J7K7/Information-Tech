@@ -1,0 +1,210 @@
+﻿@model InformationTech.Models.ClientRegister
+
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+<!-- Start Bradcaump area -->
+<div class="ht__bradcaump__area" data--black__overlay="4" style="background: rgba(0, 0, 0, 0) url(/Content/ClientCss/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">Log In</h2>
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="/Home/Index">Home</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">Log In</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start LogIn Area -->
+<section class="htc__login__container text-center ptb--80 bg__white">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="login__area__wrap">
+                    <div class="login__inner">
+                        <h2>Please Sign In</h2>
+                        @using (Html.BeginForm("Login", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+
+                            @Html.AntiForgeryToken()
+
+                            <div class="login__btn">
+
+                                
+                                <b style="color:red">@ViewBag.showdetail</b>
+                            </div>
+                            <div style="display:@ViewBag.dt;" id="block">
+                                <div class="login__form__box">
+                                    <div class="login__form">
+                                        @Html.TextBoxFor(model => model.email, new { type = "text", required = "required", placeholder = "Enter Ur Email Or Phone No.", title = "Enter Email Or Phone No." })
+                                    </div>
+                                    <div class="login__form">
+                                        @Html.TextBoxFor(model => model.password, new { type = "password", required = "required", placeholder = "Enter Ur Password", title = "Enter Password" })
+                                    </div>
+                                    <div class="login__checkbox">
+                                        <a href="javascript:void(0);" onclick="james()">Forget Password ?</a><br>
+                                    </div>
+                                    <div class="login__btn">
+                                        <button type="submit" class="htc__btn btn--theme" name="submit" value="client_regi">Log In</button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        }
+                        @using (Html.BeginForm("Login", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+
+                            @Html.AntiForgeryToken()
+                            <div style="display:@ViewBag.dt1;" id="block1">
+                                <div class="login__form__box">
+                                    <div class="login__form">
+                                        @Html.TextBoxFor(model => model.uemail, new { type = "email", required = "required", placeholder = "Enter Ur Email", title = "Enter Email" })
+                                    </div>
+                                    <div class="login__btn">
+                                        <button type="submit" class="htc__btn btn--theme" name="submit" value="submit">Submit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <button type="reset" class="htc__btn btn--theme" onclick="mjs();">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @using (Html.BeginForm("Login", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+
+                            @Html.AntiForgeryToken()
+                            <div style="display:@ViewBag.dt2;">
+                                <div class="login__form__box">
+                                    <div class="login__form">
+                                        @Html.TextBoxFor(model => model.otp, new { type = "text", required = "required", placeholder = "Enter Ur OTP", title = "Enter OTP" })
+                                    </div>
+                                    <div class="login__btn">
+                                        <button type="submit" class="htc__btn btn--theme" name="submit" value="otp">Enter OTP</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        @using (Html.BeginForm("Login", "User", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                        {
+
+                            @Html.AntiForgeryToken()
+                            <div style="display:@ViewBag.dt3;">
+                                <div class="login__form__box">
+                                    <div class="login__form">
+                                        @Html.TextBoxFor(model => model.password, new { type = "password", required = "required", placeholder = "Enter New Password", title = "Enter Password", onkeyup = "CheckPasswordStrength(this.value)" })
+                                        <span id="password_strength"></span>
+                                    </div>
+                                    <div class="login__form">
+                                        @Html.TextBoxFor(model => model.rpassword, new { type = "password", required = "required", placeholder = "Re-Enter New Password", title = "Enter Password" })
+
+                                    </div>
+                                    <div class="login__btn">
+                                        <button type="submit" class="htc__btn btn--theme" name="submit" value="password">Change Password</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- End LogIn Area -->
+
+<script>
+    function james() {
+        document.getElementById("block1").style.display = "block";
+        document.getElementById("block").style.display = "none";
+
+
+
+    }
+</script>
+<script>
+    function mjs() {
+        document.getElementById("block1").style.display = "none";
+        document.getElementById("block").style.display = "block";
+
+
+
+    }
+</script>
+<script type="text/javascript">
+    function CheckPasswordStrength(password) {
+        var password_strength = document.getElementById("password_strength");
+
+        //TextBox left blank.
+        if (password.length == 0) {
+            password_strength.innerHTML = "";
+            return;
+        }
+
+        //Regular Expressions.
+        var regex = new Array();
+        regex.push("[A-Z]"); //Uppercase Alphabet.
+        regex.push("[a-z]"); //Lowercase Alphabet.
+        regex.push("[0-9]"); //Digit.
+        regex.push("[$@@$!%*#?&]"); //Special Character.
+
+        var passed = 0;
+
+        //Validate for each Regular Expression.
+        for (var i = 0; i < regex.length; i++) {
+            if (new RegExp(regex[i]).test(password)) {
+                passed++;
+            }
+        }
+
+        //Validate for length of Password.
+        //if (passed > 2 && password.length > 8) {
+        //    passed++;
+        //}
+
+        //Display status.
+        var color = "";
+        var strength = "";
+        switch (passed) {
+            case 0:
+            case 1:
+                strength = "Weak";
+                color = "red";
+                break;
+            case 2:
+                strength = "Good";
+                color = "darkorange";
+                break;
+            case 3:
+            case 4:
+                strength = "Strong";
+                color = "green";
+                break;
+            case 5:
+                strength = "Very Strong";
+                color = "darkgreen";
+                break;
+        }
+        password_strength.innerHTML = strength;
+        password_strength.style.color = color;
+    }
+
+
+
+
+</script>

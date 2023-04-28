@@ -1,0 +1,80 @@
+﻿@model IEnumerable<InformationTech.Models.ClientVariables>
+@{
+    ViewBag.Title = "SubjectDetail";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+ <!-- Start Bradcaump area -->
+<div class="ht__bradcaump__area" data--black__overlay="4" style="background: rgba(0, 0, 0, 0) url(/Content/ClientCss/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">Courses Details</h2>
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <a class="breadcrumb-item" href="courses-grid.html">Subject</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">@ViewBag.subject</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start Courses Details Area -->
+<section class="htc__courses__details__page bg__white ptb--80">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <div class="courses__details__top">
+                    <h2>Subject :- @ViewBag.subject</h2>
+                   
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="row pt--50">
+            <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                <div class="htc__courses__leftsidebar" style="margin-left:150px;margin-top:-20px;">
+                    <!-- Start Courses Details Images -->
+                    <div class="courses__details__thumb">
+                        <img src="@ViewBag.image" alt="courses images" style="height:400px;width:300px;">
+                    </div>
+                    <!-- End Courses Details Images -->
+                    
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 sm-mt-40 xs-mt-40">
+                <div class="htc__courses__rightsidebar">
+                    <!-- Start All Courses -->
+                    <div class="htc__blog__courses">
+                        <h2 class="title__style--2">All Chapters</h2>
+                        <ul class="blog__courses">
+
+                            @{
+                                int sno = 0;
+                            }
+                        @foreach (var item in Model)
+                        {
+                           
+                            <li><a href="/Subject/ChapterDetail/@Html.DisplayFor(modelItem => item.subject_id)_@Html.DisplayFor(modelItem => item.url1)">Chapter - @{ sno++; } @sno @Html.DisplayFor(modelItem => item.chapter_name)</a></li>
+                            
+                                }
+                        </ul>
+                    </div>
+                    <!-- End All Courses -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End Courses Details Area -->
+<!-- Start popular Courses Area -->
+

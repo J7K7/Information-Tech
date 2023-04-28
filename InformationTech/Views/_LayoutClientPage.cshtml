@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Informatic Practice</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .dropdown-submenu {
+            position: relative;
+        }
+
+            .dropdown-submenu .dropdown-menu {
+                top : 0;
+                left: 50%;
+               
+                 
+                margin-top: -1px;
+            }
+
+        li:hover > ul {
+            display: block;
+           
+            position: absolute;
+        }
+    </style>
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/ClientCss/images/icon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- All css files are included here. -->
+    <!-- Bootstrap fremwork main css -->
+    <link rel="stylesheet" href="~/Content/ClientCss/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/ClientCss/css/bootstrap.min.css">
+    <!-- Owl Carousel fremwork main css -->
+    <link rel="stylesheet" href="~/Content/ClientCss/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/ClientCss/css/owl.theme.default.min.css">
+    <!-- This core.css file contents all plugings css file. -->
+    <link rel="stylesheet" href="~/Content/ClientCss/css/core.css">
+    <!-- Theme shortcodes/elements style -->
+    <link rel="stylesheet" href="~/Content/ClientCss/css/shortcode/shortcodes.css">
+    <!-- Theme main style -->
+    <link rel="stylesheet" href="~/Content/ClientCss/style.css">
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="~/Content/ClientCss/css/responsive.css">
+    <!-- User style -->
+    <link rel="stylesheet" href="~/Content/ClientCss/css/custom.css">
+
+    <!-- Modernizr JS -->
+    <script src="~/Content/ClientCss/js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Start Header Style -->
+        <div id="htc__header" class="htc-header header--one">
+            <!-- Start Header Top -->
+            <div class="htc__header__top bg__theme hidden-xs">
+                <div class="container">
+                    <div class="row">
+
+
+
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                            <div class="header__top__left">
+                                <li style="@ViewBag.cookieAllow"><a href="#"> @ViewBag.name </a></li>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                            <div class="header__top__right">
+
+                                <ul class="login__register">
+                                    <li style="@ViewBag.cookieNotAllow"><a href="/user/index">Register&nbsp; <i class='fa fa-align-justify'></i></a></li>
+                                    <li style="@ViewBag.cookieNotAllow"><a href="/user/login">Login&nbsp; <i class='fa fa-key'></i></a></li>
+
+                                    <li style="@ViewBag.cookieAllow"><a href="/user/Logout"><i class='fa fa-power-off '></i> &nbsp;Log Out </a></li>
+
+                                </ul>
+
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!-- End Header Top -->
+            <!-- Start Mainmenu Area -->
+            <div id="sticky-header-with-topbar" class="mainmenu__area bg__white hidden-xs hidden-sm sticky__header">
+                <div class="container">
+                    <div class="row">
+                        <div class="mainmenu__wrap clearfix">
+                            <div class="col-md-2 col-lg-2 col-sm-12">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="~/Content/ClientCss/images/logo/educan.png" alt="logo">
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Start MAinmenu Ares -->
+                            <div class="col-md-10 col-lg-10 col-sm-12">
+                                <nav class="mainmenu__nav">
+                                    <ul class="main__menu">
+                                        <li>
+
+                                            <a href="@Url.Action("index","Home")" class="">Home</a>
+
+                                        </li>
+                                       
+
+                                        <li class="drop">
+                                            <a href="">Courses</a>
+                                            <ul class="dropdown">
+                                                @Html.Raw(ViewBag.courses)
+                                            </ul>
+                                        </li>
+                                        <li><a href="@Url.Action("about","Home")" class="">About Us</a></li>
+                                        <li style="@ViewBag.cookieAllow1"><a href="@Url.Action("index","Dashboard")" class="">Dashboard</a></li>
+
+                                        <li style="@ViewBag.cookieAllow1"><a href="@Url.Action("index","Exam")" class="">Exam</a></li>
+
+                                        <li style="@ViewBag.cookieAllow1"><a href="@Url.Action("index","Paper")" class="">Paper</a></li>
+                                        <li><a href="@Url.Action("contactus","Home")" class="">Contact Us</a></li>
+                                    </ul>
+
+                                </nav>
+                            </div>
+                            <!-- End MAinmenu Ares -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- End Mainmenu Area -->
+
+        </div>
+        <!-- End Header Style -->
+
+        @RenderBody()
+
+
+
+
+        <!-- Start Footer Area -->
+        <footer class="htc__footer__area bg__theme">
+            <div class="container">
+                <!-- Start Footer Top Area -->
+                <div class="htc__footer__top">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            <div class="htc__footer__inner">
+                                <div class="footer__logo">
+                                    <a href="index.html">
+                                        <img src="~/Content/ClientCss/images/logo/footer.png" alt="footer logo">
+                                    </a>
+                                </div>
+                                <ul class="htc__footer__address">
+                                    <li><p><i class="icon ion-ios-location"></i>   11st Floor Newt World Tower Miami</p></li>
+                                    <li><a href="mailto:www.yourmail.com"><i class="icon ion-android-mail"></i> support@yourmail.com</a></li>
+                                    <li><a href="tel:+00123456789"><i class="icon ion-android-call"></i> (801) 2345 - 6789</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Footer Top Area -->
+                <!-- Start Foooter Menu Area -->
+                <div class="htc__footer__container pt--80 pb--70">
+                    <div class="row">
+                        <div class="col-md-2 col-lg-2 col-sm-3 col-xs-12">
+                            <!-- Start Footer Widget -->
+                            <div class="footer">
+                                <div class="footer__widget">
+                                    <h2 class="footer__title">Our Details </h2>
+                                    <ul class="htc__ft__list">
+                                        <li>
+                                        <li><a href="@Url.Action("About","Home")" class="">About Us</a></li>
+                                        <li><a href="@Url.Action("contactus","Home")" class="">Contact Us</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <div class="col-md-1 col-md-offset-1 col-lg-1 col-lg-offset-1 col-sm-2 col-xs-12 xs-mt-40">
+                                <!-- Start Footer Widget -->
+                                <div class="footer">
+                                    <div class="footer__widget">
+                                        <h2 class="footer__title">Register/Login</h2>
+                                        <ul class="htc__ft__list">
+                                           
+                                            
+                                            <li><a href="@Url.Action("register","user")" class="">Register</a></li>
+                                            <li><a href="@Url.Action("login","user")" class="">Login</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- End Footer Widget -->
+                            </div>
+                        <div class="col-md-2 col-md-offset-2 col-lg-2 col-lg-offset-2 col-sm-3 col-xs-12 xs-mt-40">
+                            <!-- Start Footer Widget -->
+                            <div class="footer">
+                                <div class="footer__widget">
+                                    <h2 class="footer__title">links</h2>
+                                    <ul class="htc__ft__list">
+                                        <li><a href="@Url.Action("index","subject")" class="">Courses</a></li>
+                                        <li><a href="@Url.Action("Payment","Home")" class="">Payment Now</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 col-sm-4 col-xs-12 xs-mt-40">
+                            <!-- Start Footer Widget -->
+                            <div class="footer">
+                                <div class="footer__widget">
+                                    <h2 class="footer__title">About us</h2>
+                                    <p class="footer__details">
+                                        Subscribe now and receive weekly
+                                        newsletter with educational materials,
+                                        new courses, interesting posts, popular
+                                        books and much more! Subscribe now
+                                        and receive weekly newsletter with
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End Footer Widget -->
+                        </div>
+                    </div>
+                </div>
+                <!-- End Foooter Menu Area -->
+                <!-- Start Copyright Area -->
+                <div class="htc__copyright__area">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                            <div class="copyright__inner">
+                                <div class="copyright">
+                                    <p>
+                                        © @DateTime.Now.Year <a href="http://www.tryoninfosoft.com" target="_blank" title="Website Design and Development, Software Development and Mobile Apps Development Company in Surat." >TRYON INFOSOFT</a>
+                                        All Right Reserved.
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Copyright Area -->
+            </div>
+        </footer>
+        <!-- End Footer Area -->
+    </div>
+    <!-- Body main wrapper end -->
+    <!-- Placed js at the end of the document so the pages load faster -->
+    <!-- jquery latest version -->
+    <script src="~/Content/ClientCss/js/vendor/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap framework js -->
+    <script src="~/Content/ClientCss/js/bootstrap.min.js"></script>
+    <!-- All js plugins included in this file. -->
+    <script src="~/Content/ClientCss/js/plugins.js"></script>
+    <script src="~/Content/ClientCss/js/slick.min.js"></script>
+    <!-- Waypoints.min.js. -->
+    <!-- Google Map js -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuU_0_uLMnFM-2oWod_fzC0atPZj7dHlU"></script>
+    <script>
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 12,
+
+                scrollwheel: false,
+
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(23.7286, 90.3854), // New York
+
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [
+
+    {
+        "featureType": "administrative",
+        "elementType": "all",
+        "stylers": [
+            {
+                "visibility": "on"
+            }
+        ]
+    },
+   {
+       "featureType": "administrative.country",
+       "elementType": "all",
+       "stylers": [
+           {
+               "visibility": "on"
+           }
+       ]
+   },
+   {
+       "featureType": "landscape",
+       "elementType": "all",
+       "stylers": [
+           {
+               "visibility": "simplified"
+           }
+       ]
+   },
+   {
+       "featureType": "poi",
+       "elementType": "all",
+       "stylers": [
+           {
+               "visibility": "off"
+           }
+       ]
+   },
+   {
+       "featureType": "road",
+       "elementType": "all",
+       "stylers": [
+           {
+               "visibility": "on"
+           }
+       ]
+   },
+   {
+       "featureType": "road",
+       "elementType": "labels",
+       "stylers": [
+           {
+               "visibility": "simplified"
+           }
+       ]
+   },
+   {
+       "featureType": "road.highway",
+       "elementType": "all",
+       "stylers": [
+           {
+               "visibility": "off"
+           }
+       ]
+   },
+   {
+       "featureType": "road.highway",
+       "elementType": "geometry",
+       "stylers": [
+           {
+               "visibility": "on"
+           }
+       ]
+   },
+   {
+       "featureType": "road.local",
+       "elementType": "all",
+       "stylers": [
+           {
+               "visibility": "on"
+           }
+       ]
+   },
+   {
+       "featureType": "transit",
+       "elementType": "all",
+       "stylers": [
+           {
+               "visibility": "off"
+           }
+       ]
+   },
+   {
+       "featureType": "transit.line",
+       "elementType": "geometry",
+       "stylers": [
+           {
+               "color": "#3f518c"
+           }
+       ]
+   },
+   {
+       "featureType": "water",
+       "elementType": "all",
+       "stylers": [
+           {
+               "visibility": "simplified"
+           },
+           {
+               "color": "#84afa3"
+           },
+           {
+               "lightness": 52
+           }
+       ]
+   }
+                ]
+            };
+
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('googleMap');
+
+            // Create the Google Map using our element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+
+            // Let's also add a marker while we're at it
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(23.7286, 90.3854),
+                map: map,
+                title: 'Ramble!',
+                animation: google.maps.Animation.BOUNCE
+
+            });
+        }
+    </script>
+    <script src="~/Content/ClientCss/js/owl.carousel.min.js"></script>
+    <script src="~/Content/ClientCss/js/waypoints.min.js"></script>
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="~/Content/ClientCss/js/main.js"></script>
+
+
+</body>
+</html>
+<script>
+
+    $(document).ready(function () {
+        $('.dropdown-submenu a.test').on("click", function (e) {
+            $(this).next('ul').toggle();
+            e.stopPropagation();
+            e.preventDefault();
+        });
+    });
+</script>

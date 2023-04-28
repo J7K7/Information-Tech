@@ -1,0 +1,144 @@
+﻿
+@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+<!-- Start Coutdown Area -->
+<section class="our__countdown__area ptb--100" data--theme__overlay="6" style="background: rgba(0, 0, 0, 0) url(/Content/ClientCss/images/bg/2.jpg) no-repeat scroll center center / cover ;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-lg-7 col-sm-12 col-xs-12">
+                <div class="countdown__wrap">
+                    <div class="countdown__inner">
+                        <h4>GET 100s OF ONLINE COURSES</h4>
+                        <h2>Payment NOW</h2>
+                    </div>
+
+                </div>
+            </div>
+            @using (Html.BeginForm("Payment", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+
+                @Html.AntiForgeryToken()
+            <div class="col-md-4 col-lg-5 col-sm-12 col-xs-12 sm-mt-30 xs-mt-30">
+                <div class="create__free__account__form">
+                    <h2><i class="icon ion-android-lock"></i>Give Account Detail Here !</h2>
+                    <div class="account__form__box">
+
+                        <input type="text" placeholder="Enter CVV Number" required="required" onkeypress="return event.charCode>=48 && event.charCode<=57;">
+
+                        <div class="row">
+                            <div class="col-4" style="margin-left: 15px; margin-right: 15px;">
+
+                                <input type="text" id="month" maxlength="2" required="required" placeholder="Expire Month" onkeypress="return event.charCode >= 48 && event.charCode <= 57;" onblur="mjs(this)">
+                                <span id="password_strength"></span>
+                            </div>
+                            <div class="col-4">
+                                <input type="text" placeholder="Expire Year" required="required" id="year" onblur="james();" minlength="4" maxlength="4" onkeypress="return event.charCode>=48 && event.charCode<=57;">
+                                <span id="password_strength1"></span>
+                             </div>
+                           
+                        </div>
+
+                        <input type="password" required="required" placeholder="Enter Password">
+                        <div class="acount__btn">
+                            <button class="htc__btn btn--theme btn--smll" type="submit" name="submit" value="submit">Pay it now</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            }
+         </div>
+    </div>
+</section>
+<!-- End Coutdown Area -->
+<script>
+    function mjs() {
+        var month = document.getElementById("month").value;
+
+        var password_strength = document.getElementById("password_strength");
+        if (month > 12) {
+            document.getElementById("month").value = "";
+            password_strength.innerHTML = "Invalid Month";
+            password_strength.style.color = "red";
+        }
+        else {
+            password_strength.innerHTML = "";
+            password_strength.style.color = "";
+        }
+    }
+    function james() {
+        var year = document.getElementById("year").value;
+        var year1 = "@ViewBag.year";
+        var password_strength = document.getElementById("password_strength1");
+        if (year <= year1) {
+            document.getElementById("year").value = "";
+            password_strength.innerHTML = "Invalid Year";
+            password_strength.style.color = "red";
+        }
+        else {
+            password_strength.innerHTML = "";
+            password_strength.style.color = "";
+        }
+    }
+    //function CheckPasswordStrength(password) {
+    //    var password_strength = document.getElementById("password_strength");
+
+    //    //TextBox left blank.
+    //    if (password.length == 0) {
+    //        password_strength.innerHTML = "";
+    //        return;
+    //    }
+
+    //    //Regular Expressions.
+    //    var regex = new Array();
+    //    regex.push("[A-Z]"); //Uppercase Alphabet.
+    //    regex.push("[a-z]"); //Lowercase Alphabet.
+    //    regex.push("[0-9]"); //Digit.
+    //    regex.push("[$@@$!%*#?&]"); //Special Character.
+
+    //    var passed = 0;
+
+    //    //Validate for each Regular Expression.
+    //    for (var i = 0; i < regex.length; i++) {
+    //        if (new RegExp(regex[i]).test(password)) {
+    //            passed++;
+    //        }
+    //    }
+
+    //    //Validate for length of Password.
+    //    //if (passed > 2 && password.length > 8) {
+    //    //    passed++;
+    //    //}
+
+    //    //Display status.
+    //    var color = "";
+    //    var strength = "";
+    //    switch (passed) {
+    //        case 0:
+    //        case 1:
+    //            strength = "Weak";
+    //            color = "red";
+    //            break;
+    //        case 2:
+    //            strength = "Good";
+    //            color = "darkorange";
+    //            break;
+    //        case 3:
+    //        case 4:
+    //            strength = "Strong";
+    //            color = "green";
+    //            break;
+    //        case 5:
+    //            strength = "Very Strong";
+    //            color = "darkgreen";
+    //            break;
+    //    }
+    //    password_strength.innerHTML = strength;
+    //    password_strength.style.color = color;
+    //}
+
+
+</script>

@@ -1,0 +1,124 @@
+﻿@model IEnumerable<InformationTech.Models.ClientTopicDetail>
+@{
+    ViewBag.Title = "TopicDetail";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+<div class="ht__bradcaump__area" data--black__overlay="4" style="background: rgba(0, 0, 0, 0) url(/Content//ClientCss/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">Courses Details</h2>
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <a class="breadcrumb-item" href="courses-grid.html">courses</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">Mathematics and Statistics</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start Courses Details Area -->
+<section class="htc__courses__details__page bg__white ptb--80">
+    <div class="container">
+        <div class="row pt--50">
+            <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                <div class="htc__courses__leftsidebar">
+
+                    @foreach (var item in Model)
+                    {
+
+                    <!-- Start Courses Details Images -->
+                        <div class="courses__details__thumb">
+                            <img src="@Html.DisplayFor(modelItem => item.topic_image)" alt="courses images">
+                        </div>
+
+                    <!-- End Courses Details Images -->
+                        <div class="htc__crs__tab__wrap">
+                            <!-- Start Courses Details TAb -->
+                            <ul class="courses__view mt--50" role="tablist">
+
+                                <li role="presentation" class="description active"><a href="#description" role="tab" data-toggle="tab"><i class="icon ion-ios-copy"></i>Source Code</a></li>
+
+                                <li role="presentation" class="week"><a href="#week" role="tab" data-toggle="tab"><i class="icon ion-ios-list-outline"></i>Topic Video</a></li>
+
+                                <li role="presentation" class="description"><a href="@Html.DisplayFor(modelItem => item.pdf)" target="_blank"><i class="icon ion-ios-copy"></i>Topic Pdf</a></li>
+                            </ul>
+                            <!-- End Courses Details TAb -->
+                            <div class="courses__tab__content">
+                                <!-- Start Single Content -->
+                                <div id="description" role="tabpanel" class="single__crs__content tab-pane fade in active clearfix">
+                                    <div class="single__crs__details">
+                                        @Html.Raw(item.source_code)
+                                    </div>
+                                </div>
+                                <!-- End Single Content -->
+                                <!-- Start Single Content -->
+                                <div id="week" role="tabpanel" class="single__crs__content tab-pane fade clearfix">
+                                    <div class="single__crs__details">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/@Html.DisplayFor(modelItem => item.video)" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                                <!-- End Single Content -->
+                            </div>
+                        </div>
+
+                    }
+                </div>
+
+            </div>
+            <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 sm-mt-40 xs-mt-40">
+                <div class="htc__courses__rightsidebar">
+                    <!-- Start All Courses -->
+                    <div class="htc__blog__courses">
+                        <h2 class="title__style--2">All Chapters</h2>
+                        <ul class="blog__courses">
+                            @Html.Raw(ViewBag.dt)
+                        </ul>
+                    </div>
+                    <!-- End All Courses -->
+                    <!-- Start Courses Features -->
+                    <!-- End Courses Features -->
+                    <!-- Start Recent Post -->
+
+                    <div class="blog__recent__courses">
+                        <h2 class="title__style--2">More Courses by Derek spafford</h2>
+                        <div class="recent__courses__inner">
+                            
+                            @Html.Raw(ViewBag.dt2)
+                            
+                            <!-- End Single POst -->
+
+
+
+
+
+                        </div>
+                        @*<div class="ctrs__dtl__btn mt--30">
+                            <a class="htc__btn btn--transparent" href="#">View Details</a>
+                        </div>*@
+                    </div>
+
+
+
+                   
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+</section>
+
+<!-- End Courses Details Area -->
+<!-- Start popular Courses Area -->

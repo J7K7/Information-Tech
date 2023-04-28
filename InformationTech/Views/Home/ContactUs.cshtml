@@ -1,0 +1,151 @@
+﻿@model InformationTech.Models.contact
+@{
+    ViewBag.Title = "ContactUs";
+    Layout = "~/Views/_LayoutClientPage.cshtml";
+}
+
+
+<!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+<!-- Body main wrapper start -->
+<!-- Start Header Style -->
+<!-- Start Bradcaump area -->
+<div class="ht__bradcaump__area" data--black__overlay="4" style="background: rgba(0, 0, 0, 0) url(/Content/ClientCss/images/bg/4.jpg) no-repeat scroll center center / cover ;">
+    <div class="ht__bradcaump__wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="bradcaump__inner text-center">
+                        <h2 class="bradcaump-title">contact</h2>
+                        <nav class="bradcaump-inner">
+                            <a class="breadcrumb-item" href="index.html">Home</a>
+                            <span class="brd-separetor"><i class="icon ion-ios-arrow-right"></i></span>
+                            <span class="breadcrumb-item active">contact</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Bradcaump area -->
+<!-- Start Contact Area -->
+<section class="htc__contact__area ptb--80 bg__white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                <div class="contact__wrap">
+                    <h2 class="title__style--2">Contact Info</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed tempor and vitality, so that the labor and sorrow, some important things to do eiusmod. Over the years, I will come, who will nostrud aliquip out of her the advantage of exercise, so that stimulus efforts if the school district and longevity. </p>
+                    <div class="htc__contact__inner">
+                        <!-- Start Single Address -->
+                        <div class="contact__address">
+                            <div class="cont__icon">
+                                <i class="icon ion-ios-location"></i>
+                                <span>address</span>
+                            </div>
+                            <p>11st Floor New World Tower Miami</p>
+                        </div>
+                        <!-- End Single Address -->
+                        <!-- Start Single Address -->
+                        <div class="contact__address">
+                            <div class="cont__icon">
+                                <i class="icon ion-android-call"></i>
+                                <span>phone</span>
+                            </div>
+                            <p><a href="tel:+00123456789">(801) 2345 - 6789</a></p>
+                        </div>
+                        <!-- End Single Address -->
+                        <!-- Start Single Address -->
+                        <div class="contact__address">
+                            <div class="cont__icon">
+                                <i class="icon ion-android-mail"></i>
+                                <span>Email</span>
+                            </div>
+                            <p><a href="mailto:www.yourmail.com">support@yourmail.com</a></p>
+                        </div>
+                        <!-- End Single Address -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 sm-mt-40 xs-mt-40">
+                <div class="htc__contact__form__wrap">
+                    <h2 class="contact__title">Send A Message</h2>
+                    <div class="contact-form-wrap">
+@using (Html.BeginForm("ContactUs", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.DateAndTime, new { @Value = DateTime.Now.ToString("yyyy-MM-dd") })
+
+                        
+                            <div class="single-contact-form name">
+                                <div class="contact-box name_email">
+                                    @Html.TextBoxFor(model => model.name, new {  required = "required", placeholder = "Your Name*", title = "Your Name*"})
+                                    @Html.TextBoxFor(model => model.email, new { required = "required", placeholder = "Your Email*", type = "email", title = "Your Email*" })
+
+                                    
+                                </div>
+                            </div>
+                            <div class="single-contact-form">
+                                <div class="contact-box subject">
+                                    @Html.TextBoxFor(model => model.subject, new { required = "required", placeholder = "Your Subject*", title = "Your Subject*" })
+                                </div>
+                            </div>
+                            
+                            <div class="single-contact-form">
+                                <div class="contact-box message">
+                                  
+                                    @Html.TextAreaFor(model => model.message, new { required = "required", placeholder = "Message", title = "Message" })
+                                    
+                                </div>
+                            </div>
+                            <div class="contact-btn">
+                                <button type="submit" class="htc__btn btn--theme" id="message" value="message" name="submit">Submit</button>
+                            </div>
+                       
+
+}
+                    </div>
+                    <div class="form-output">
+                        <p class="form-messege" style="color:red;">@ViewBag.ab</p>
+                    </div>
+                </div>
+            </div>
+
+             </div>
+    </div>
+</section>
+<!-- End Contact Area -->
+<!-- Start our Google Map Area -->
+
+<!-- End our Google Map Area -->
+<!-- Start Footer Area -->
+<!-- End Footer Area -->
+<!-- Body main wrapper end -->
+<!-- Placed js at the end of the document so the pages load faster -->
+<!-- jquery latest version -->
+<script src="js/vendor/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap framework js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- All js plugins included in this file. -->
+<script src="js/plugins.js"></script>
+<script src="js/slick.min.js"></script>
+<!-- Waypoints.min.js. -->
+<!-- Google Map js -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuU_0_uLMnFM-2oWod_fzC0atPZj7dHlU"></script>
+<script>
+        // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
+
+       
+</script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/waypoints.min.js"></script>
+<!-- Main js file that contents all jQuery plugins activation. -->
+<script src="js/main.js"></script>
+
+
+

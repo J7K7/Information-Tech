@@ -1,0 +1,106 @@
+﻿@model InformationTech.Models.price
+
+
+@{
+    ViewBag.Title = "Price Update";
+    Layout = "~/Views/_LayoutPageAdmin.cshtml";
+}
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+<div class="container-fluid">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="row page-titles">
+        <div class="col-md-5 align-self-center">
+            <h3 class="text-themecolor">Update Membership</h3>
+        </div>
+        <div class="col-md-7 align-self-center">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="@Url.Action("DashBoard","techadmin")">Home</a></li>
+                <li class="breadcrumb-item">Price</li>
+                <li class="breadcrumb-item active">Update Price</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Start Page Content -->
+    <!-- ============================================================== -->
+    <!-- Row -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    @using (Html.BeginForm("price", "techadmin", FormMethod.Post, new { enctype = "multipart/form-data", style = "width:400px;" }))
+    {
+
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.dateandtime, new { @Value = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") })
+        @Html.HiddenFor(model => model.price_id)
+        
+
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header btn-primary">
+
+                        <h4 class="m-b-0 text-white">Update Membership Here</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form p-t-20">
+
+
+                            <div class="row">
+                                <div class="col-lg-12">
+
+                                    <div class="form-group">
+                                        <label for="exampleInputuname">Membership Price</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="ti-credit-card"></i></div>
+
+                                            @Html.TextBoxFor(model => model.money, new { placeholder = "Enter Price",id = "exampleInputuname", onkeypress = "return event.charCode>=48 && event.charCode<=57;", title = "Enter Price", @class = "form-control" })
+
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="exampleInputuname">Memebership Days</label>
+                                        <div class="input-group">
+                                            <div class="input-group-addon"><i class="ti-calendar"></i></div>
+
+                                            @Html.TextBoxFor(model => model.days, new { placeholder = "Enter Days",id = "exampleInputuname", onkeypress = "return event.charCode>=48 && event.charCode<=57;", title = "Enter Days", @class = "form-control" })
+
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                              
+
+
+
+                            </div>
+                        </div>
+                        <button class="btn waves-effect waves-light btn-outline-success  text-uppercase btn-rounded " type="submit" value="price" name="submit">Change Price</button>
+                        &nbsp;&nbsp;
+                       
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    }
+
+</div>
+
+
+
+
+

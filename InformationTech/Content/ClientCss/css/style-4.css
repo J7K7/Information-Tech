@@ -1,0 +1,152 @@
+
+/*-----------------------------------------------------------------------------------
+  Template Name: Educan Education HTML Template.
+  Template URI: #
+  Description: Educan is a unique website template designed in HTML with a simple & beautiful look. There is an excellent solution for creating clean, wonderful and trending material design corporate, corporate any other purposes websites.
+  Author: HasTech
+  Author URI: https://themeforest.net/user/hastech/portfolio
+  Version: 1.0
+
+
+-----------------------------------------------------------------------------------
+  
+  CSS INDEX
+  ===================
+
+  01. Google fonts
+  02. Scroll To Top
+  03. Button Style
+
+
+-----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------*/
+/*  1. Google fonts
+/*----------------------------------------*/
+
+/*
+
+    font-family: 'Roboto Slab', serif;
+
+    font-family: 'Raleway', sans-serif;
+
+*/
+
+
+/*---------------------------------------
+  02. Scroll To Top
+----------------------------------------*/
+#scrollUp {
+  border: 3px solid #53254e;
+}
+ #scrollUp {
+  background: #9f1e49 none repeat scroll 0 0;
+}
+ 
+
+
+
+/*---------------------
+  Default Css
+-----------------------*/
+
+a:hover,
+a:focus,
+a:active {
+    color: #9f1e49;
+}
+p a:hover,
+p a:focus,
+p a:active {
+    color: #9f1e49;
+}
+
+a{
+  color: #fff;
+}
+
+*::-moz-selection {
+  background: #9f1e49 none repeat scroll 0 0;
+  color: #fff;
+  text-shadow: none;
+}
+
+*::-moz-selection {
+  background: #9f1e49 none repeat scroll 0 0;
+  color: #fff;
+  text-shadow: none;
+}
+.bg--theme{
+  background: #9f1e49;
+}
+
+/*---------------------------------------
+  End Scroll To Top
+----------------------------------------*/
+
+
+/*------------------------------
+  03. Button Style
+--------------------------------*/
+.btn--theme {
+  background: #9f1e49;
+  color: #fff;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 27px;
+}
+.btn--transparent.btn--small {
+  line-height: 44px;
+  padding: 0 23px;
+  font-size: 13px;
+  font-family: Raleway;
+  font-weight: 700;
+}
+.btn--theme::after {
+  background: #fff;
+}
+.btn--theme:hover {
+  color: #9f1e49;
+}
+
+.acount__btn .btn--theme{
+  border: 1px solid #9f1e49;
+}
+.acount__btn .btn--theme:hover {
+  color: #9f1e49;
+  border: 1px solid #9f1e49;
+}
+
+
+/*---------------------------------
+  13. Background theme Overlay 
+---------------------------------*/
+
+[data--theme__overlay] {
+    position: relative;
+}
+
+[data--theme__overlay]:before {
+    position: absolute;
+    content: '';
+    background: #0e2c53;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+[data--theme__overlay="1"]:before {
+    opacity: 0.1;
+}
+[data--theme__overlay="6"]:before {
+    opacity: 0.6;
+}
+
+
+
+
+.slider__activation__wrap.owl-theme .owl-nav [class*="owl-"]:hover {
+  background: #9f1e49 none repeat scroll 0 0;
+}
